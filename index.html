@@ -3,39 +3,26 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Duelers Collection — Blackhat Distillery (PDP Concept)</title>
-<meta name="description" content="Duelers Dark Double Oaked — a 2× Silver-winning American Agave Spirit rested twice on French and American oak. Shop tasting notes, awards, and the full Duelers line from Blackhat Distillery, Colorado Springs.">
-<link rel="canonical" href="https://www.blackhatdistillery.com/products/duelers-dark-double-oaked">
-<meta property="og:type" content="product">
-<meta property="og:title" content="Duelers Dark Double Oaked — Blackhat Distillery">
-<meta property="og:description" content="A 2× Silver-winning American Agave Spirit, double-oaked for deep, spiced structure. Distilled from 100% Blue Weber agave in Colorado Springs.">
-<meta property="og:image" content="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp">
-<meta property="product:price:amount" content="125.00">
-<meta property="product:price:currency" content="USD">
+<title>All Spirits — Blackhat Distillery (PDP Concept)</title>
+<meta name="description" content="Shop the full Blackhat Distillery lineup — the Duelers Collection of American Agave Spirits, Whiskey &amp; Bourbon, Rum, Liqueurs, and more. Small-batch, Colorado Springs distilled.">
+<link rel="canonical" href="https://www.blackhatdistillery.com/collections/all-spirits">
+<meta property="og:type" content="website">
+<meta property="og:title" content="All Spirits — Blackhat Distillery">
+<meta property="og:description" content="The full Blackhat Distillery lineup, led by the Duelers Collection of American Agave Spirits — small-batch, Colorado Springs distilled.">
+<meta property="og:image" content="https://i.ibb.co/TMWxhJmQ/Duelers-full-line-1.png">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org/",
-  "@type": "Product",
-  "name": "Duelers Dark Double Oaked",
-  "image": "https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp",
-  "description": "Deep, spiced, and structured. Aromas of cinnamon, baking spice, and toasted wood give way to layered notes of dried fig and raisin with a hint of espresso. Rested a second time on French and American oak, and distilled from 100% Blue Weber agave, cut with pure Rocky Mountain water.",
-  "sku": "BHTR-DDDO*",
-  "gtin12": "198715908244",
-  "brand": { "@type": "Brand", "name": "Blackhat Distillery" },
-  "category": "Double Oaked Agave Spirit",
-  "award": "2× Silver Medal",
-  "offers": {
-    "@type": "Offer",
-    "url": "https://www.blackhatdistillery.com/products/duelers-dark-double-oaked",
-    "priceCurrency": "USD",
-    "price": "125.00",
-    "availability": "https://schema.org/InStock",
-    "itemCondition": "https://schema.org/NewCondition"
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.8",
-    "reviewCount": "47"
+  "@type": "CollectionPage",
+  "name": "All Spirits — Blackhat Distillery",
+  "url": "https://www.blackhatdistillery.com/collections/all-spirits",
+  "about": { "@type": "Brand", "name": "Blackhat Distillery" },
+  "mainEntity": {
+    "@type": "ItemList",
+    "itemListElement": [
+      { "@type": "Product", "position": 1, "name": "Duelers Dark Double Oaked", "url": "https://www.blackhatdistillery.com/products/duelers-dark-double-oaked", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "125.00" } },
+      { "@type": "Product", "position": 2, "name": "Blackhat Whiskey", "url": "https://www.blackhatdistillery.com/products/blackhat-whiskey", "offers": { "@type": "Offer", "priceCurrency": "USD", "price": "45.99" } }
+    ]
   }
 }
 </script>
@@ -106,15 +93,10 @@
     border-bottom:1px solid var(--line-d);
   }
   .headrow{ display:flex; align-items:center; justify-content:space-between; padding:14px 32px; max-width:1240px; margin:0 auto; }
-  .logo{ display:flex; align-items:center; gap:12px; }
-  .logo-mark{
-    width:42px; height:42px; border-radius:50%; background:var(--cream); padding:3px;
-    box-shadow:0 0 0 1px var(--brass-light); overflow:hidden; flex:none;
-  }
-  .logo-mark img{ width:100%; height:100%; object-fit:cover; border-radius:50%; }
-  .logo-word{ font-family:'Nunito Sans', sans-serif; font-weight:900; font-size:20px; letter-spacing:0.06em; color:#fff; line-height:1; }
-  .logo-word span{ color:#fff; }
-  .logo-sub{ font-size:9.5px; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone); margin-top:3px; }
+  .logo{ display:flex; flex-direction:column; align-items:flex-start; gap:5px; }
+  .logo-full{ height:46px; width:auto; object-fit:contain; display:block; flex:none; }
+  .logo-locality{ font-size:9.5px; letter-spacing:0.18em; text-transform:uppercase; color:var(--stone); }
+  .foot-logo-full{ height:52px; width:auto; object-fit:contain; display:block; flex:none; }
   nav.mainnav{ display:flex; gap:34px; }
   nav.mainnav a{ font-size:13px; letter-spacing:0.08em; text-transform:uppercase; color:var(--cream-dim); position:relative; padding-bottom:4px; transition:color .25s; }
   nav.mainnav a::after{ content:""; position:absolute; left:0; right:100%; bottom:0; height:1px; background:var(--brass-light); transition:right .3s ease; }
@@ -247,18 +229,12 @@
   .availbox svg{ width:18px; height:18px; color:var(--brass-dark); flex:none; margin-top:1px; }
   .availbox .at-title{ font-size:12.5px; font-weight:700; color:var(--ink); margin-bottom:3px; }
   .availbox .at-sub{ font-size:11.5px; color:var(--ink-soft); line-height:1.5; }
-  .availbox .at-sub + .at-sub{ margin-top:8px; }
 
-  .miniratings{ display:flex; align-items:center; gap:8px; margin:10px 0 6px; }
+  .miniratings{ display:flex; align-items:center; gap:8px; margin:2px 0 16px; }
   .miniratings .starrow{ display:flex; gap:2px; }
-  .miniratings .starrow svg{ width:15px; height:15px; color:var(--brass); fill:var(--brass); }
-  .miniratings a{ font-size:12.5px; color:var(--ink-soft); text-decoration:underline; text-underline-offset:2px; }
+  .miniratings .starrow svg{ width:14px; height:14px; color:var(--brass); fill:var(--brass); }
+  .miniratings a{ font-size:12px; color:var(--ink-soft); text-decoration:underline; text-underline-offset:2px; }
   .miniratings a:hover{ color:var(--brass-dark); }
-
-  .paymethods{ display:flex; align-items:center; gap:10px; flex-wrap:wrap; margin-top:16px; }
-  .paymethods .pm-label{ font-size:10.5px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); }
-  .paymethods .pm-icons{ display:flex; gap:6px; }
-  .paymethods .pm-icons span{ font-size:10px; font-weight:800; letter-spacing:.03em; color:var(--ink-soft); border:1px solid var(--line-strong); border-radius:5px; padding:4px 7px; background:var(--paper); }
 
   .trustrow{ display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin-top:30px; padding-top:26px; border-top:1px solid var(--line); }
   .trust{ text-align:center; }
@@ -297,46 +273,6 @@
   .notecard h3{ font-size:22px; margin:10px 0 12px; position:relative; }
   .notecard p{ color:var(--ink-soft); line-height:1.7; font-size:14.5px; position:relative; }
   .footnote{ font-size:11.5px; color:var(--ink-soft); margin-top:26px; max-width:60ch; }
-
-  /* ===== Reviews & Ratings ===== */
-  .reviewswrap{ display:grid; grid-template-columns:0.85fr 1.15fr; gap:56px; align-items:start; }
-  .starrow{ display:flex; gap:3px; }
-  .starrow svg{ width:16px; height:16px; }
-  .star-fill{ color:var(--brass); fill:var(--brass); }
-  .star-empty{ color:var(--line-strong); fill:none; }
-  .ratingsummary{ background:var(--paper-2); border:1px solid var(--line); border-radius:16px; padding:28px 26px; }
-  .ratingsummary .big{ font-family:'EB Garamond',serif; font-size:52px; line-height:1; color:var(--ink); }
-  .ratingsummary .starrow{ margin:10px 0 6px; }
-  .ratingsummary .big .starrow svg{ width:18px; height:18px; }
-  .ratingsummary .count{ font-size:12.5px; color:var(--ink-soft); margin-bottom:22px; }
-  .ratingbars{ display:flex; flex-direction:column; gap:7px; margin-bottom:26px; }
-  .ratingbars .rbrow{ display:flex; align-items:center; gap:10px; font-size:11.5px; color:var(--ink-soft); }
-  .ratingbars .rbrow .lbl{ width:38px; flex:none; }
-  .ratingbars .rbrow .track{ flex:1; height:6px; border-radius:4px; background:var(--paper-3); overflow:hidden; }
-  .ratingbars .rbrow .fill{ height:100%; background:var(--brass); border-radius:4px; }
-  .ratingbars .rbrow .pct{ width:32px; text-align:right; flex:none; }
-  .aspectlist{ display:flex; flex-direction:column; gap:14px; }
-  .aspectlist .arow{ display:grid; grid-template-columns:90px 1fr 34px; align-items:center; gap:12px; font-size:12px; color:var(--ink-soft); }
-  .aspectlist .track{ height:6px; border-radius:4px; background:var(--paper-3); overflow:hidden; }
-  .aspectlist .fill{ height:100%; background:var(--sage); border-radius:4px; }
-
-  .reviewlist{ display:flex; flex-direction:column; gap:22px; }
-  .reviewcard{ border-bottom:1px solid var(--line); padding-bottom:22px; }
-  .reviewcard:last-child{ border-bottom:none; }
-  .reviewcard .rc-head{ display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:8px; gap:12px; flex-wrap:wrap; }
-  .reviewcard .rc-who{ display:flex; align-items:center; gap:8px; font-size:13.5px; font-weight:700; color:var(--ink); }
-  .verified-badge{ display:inline-flex; align-items:center; gap:4px; font-size:10px; letter-spacing:.04em; text-transform:uppercase; color:var(--sage-deep); background:rgba(126,170,139,0.12); border:1px solid var(--sage); border-radius:999px; padding:2px 8px; font-weight:700; }
-  .verified-badge svg{ width:10px; height:10px; }
-  .reviewcard .rc-date{ font-size:11px; color:var(--ink-soft); }
-  .reviewcard .rc-title{ font-size:14.5px; font-weight:700; margin:6px 0 6px; }
-  .reviewcard .rc-body{ font-size:13.5px; color:var(--ink-soft); line-height:1.7; margin-bottom:10px; }
-  .reviewcard .rc-foot{ display:flex; align-items:center; gap:16px; }
-  .helpfulbtn{ display:flex; align-items:center; gap:6px; font-size:11.5px; color:var(--ink-soft); background:none; border:1px solid var(--line-strong); border-radius:999px; padding:5px 12px; transition:border-color .2s, color .2s; }
-  .helpfulbtn:hover{ border-color:var(--brass); color:var(--brass-dark); }
-  .helpfulbtn svg{ width:12px; height:12px; }
-  .helpfulbtn.voted{ border-color:var(--brass); color:var(--brass-dark); background:rgba(199,154,69,0.08); }
-  .writereview{ margin-top:24px; font-size:12px; letter-spacing:.06em; text-transform:uppercase; color:var(--brass-dark); border:1px solid var(--line-strong); border-radius:999px; padding:10px 20px; display:inline-block; }
-  .writereview:hover{ border-color:var(--brass); }
 
   .craftgrid{ display:grid; grid-template-columns:1.1fr 0.9fr; gap:56px; align-items:start; }
   .craftgrid p{ color:var(--ink-soft); line-height:1.85; font-size:15.5px; margin-bottom:18px; }
@@ -396,20 +332,6 @@
   .lineup-head{ display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:44px; flex-wrap:wrap; gap:14px; }
   .lineup-head h2{ font-size:32px; }
   .lineup-head p{ color:var(--ink-soft); font-size:13.5px; max-width:40ch; }
-
-  .alsolike{ padding:0 32px 100px; max-width:1240px; margin:0 auto; }
-  .alsolike-head{ margin-bottom:26px; }
-  .alsolike-head h2{ font-size:26px; margin-top:8px; }
-  .alsocard{ display:flex; align-items:center; gap:28px; background:var(--paper-2); border:1px solid var(--line); border-radius:18px; padding:24px 28px; transition:border-color .25s, transform .25s; }
-  .alsocard:hover{ border-color:var(--brass); transform:translateY(-3px); }
-  .alsocard .ac-img{ width:88px; height:130px; flex:none; display:flex; align-items:center; justify-content:center; }
-  .alsocard .ac-img img{ max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 10px 14px rgba(33,24,24,0.22)); }
-  .alsocard .ac-body{ flex:1; }
-  .alsocard .ac-cat{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ox); font-weight:800; margin-bottom:6px; }
-  .alsocard h3{ font-size:19px; margin-bottom:6px; }
-  .alsocard p{ font-size:13px; color:var(--ink-soft); line-height:1.6; max-width:56ch; }
-  .alsocard .ac-cta{ flex:none; font-size:11.5px; letter-spacing:.07em; text-transform:uppercase; color:var(--brass-dark); border:1px solid var(--line-strong); border-radius:999px; padding:10px 20px; white-space:nowrap; transition:border-color .2s; }
-  .alsocard:hover .ac-cta{ border-color:var(--brass); }
   .lineup-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
   .linecard{ background:var(--paper-2); border:1px solid var(--line); border-radius:18px; padding:26px; transition:transform .3s, border-color .3s; position:relative; overflow:hidden; cursor:pointer; }
   .linecard:hover{ transform:translateY(-6px); border-color:var(--brass); }
@@ -434,7 +356,7 @@
     border-top:1px solid var(--line-d); padding:56px 32px 40px; color:var(--cream); }
   .foot-in{ max-width:1240px; margin:0 auto; display:flex; justify-content:space-between; flex-wrap:wrap; gap:24px; }
   .foot-left{ display:flex; gap:14px; align-items:flex-start; max-width:38ch; }
-  .foot-left .logo-mark{ margin-top:2px; }
+  .foot-left .foot-logo-full{ margin-top:2px; }
   .foot-left p{ color:var(--stone); font-size:12px; margin-top:8px; line-height:1.6; }
   .foot-right{ display:flex; gap:60px; flex-wrap:wrap; }
   .foot-col span{ display:block; font-size:11px; letter-spacing:.12em; text-transform:uppercase; color:var(--brass-light); margin-bottom:12px; }
@@ -463,7 +385,7 @@
 
   @media (max-width: 980px){
     .pdp{ grid-template-columns:1fr; gap:40px; }
-    .craftgrid, .servewrap, .reviewswrap{ grid-template-columns:1fr; }
+    .craftgrid, .servewrap{ grid-template-columns:1fr; }
     .story-in{ grid-template-columns:1fr; }
     .story-photos{ height:340px; margin-top:20px; }
     .lineup-grid{ grid-template-columns:1fr 1fr; }
@@ -479,38 +401,122 @@
     .lineup-grid{ grid-template-columns:1fr; }
     .awardgrid{ grid-template-columns:1fr; }
     .trustrow{ grid-template-columns:1fr; }
-    .wrap,.pdp,.tabsection,.lineup,.alsolike{ padding-left:20px; padding-right:20px; }
+    .wrap,.pdp,.tabsection,.lineup{ padding-left:20px; padding-right:20px; }
     .gallery-stage{ max-width:100%; aspect-ratio:3/5; }
     .bottle-scene{ width:97%; height:99%; }
     .thumbs{ gap:8px; }
     .thumb img{ max-width:95%; max-height:95%; }
     .badge-corner{ font-size:9.5px; padding:5px 10px; }
     .linecard .lc-bottle{ height:270px; }
-    .alsocard{ flex-direction:column; text-align:center; }
-    .alsocard .ac-img{ width:110px; height:160px; }
   }
   @media (max-width: 420px){
     .thumbs{ flex-wrap:wrap; }
     .thumb{ flex:0 0 calc(50% - 6px); }
   }
 </style>
+
+<style>
+  /* ===== Landing page additions ===== */
+  .featured-band{ background:#ffffff; border-bottom:1px solid var(--line); padding:8px 32px 0; }
+
+  .hero-header{
+    position:relative; overflow:hidden;
+    background:
+      linear-gradient(180deg, rgba(33,24,24,0.78), rgba(33,24,24,0.6) 55%, rgba(33,24,24,0.85)),
+      url('https://i.ibb.co/PsgbrL5y/pexels-haley-bee-347725846-28964990.jpg');
+    background-size:cover; background-position:center; background-attachment:fixed;
+  }
+  .hero-header-in{ padding:100px 32px 90px; }
+  .catalog-hero-label{ max-width:1240px; margin:0 auto; padding:0; text-align:center; }
+  .catalog-hero-label .eyebrow{ display:block; margin-bottom:10px; }
+  .catalog-hero-label h1{ font-size:44px; margin-bottom:14px; color:#fff; }
+  .catalog-hero-label p{ color:var(--cream-dim); font-size:14.5px; max-width:56ch; margin:0 auto; }
+  .hero-banner-card{ display:inline-block; margin:38px auto 0; }
+  .hero-banner{ display:block; max-width:780px; width:100%; }
+
+  @media (max-width: 980px){
+    .hero-header{ background-attachment:scroll; }
+  }
+
+  .catsection{ padding:80px 32px; max-width:1240px; margin:0 auto; }
+  .catsection-head{ display:flex; justify-content:space-between; align-items:flex-end; margin-bottom:36px; flex-wrap:wrap; gap:14px; }
+  .catsection-head h2{ font-size:28px; }
+  .catsection-head p{ color:var(--ink-soft); font-size:13px; max-width:44ch; }
+  .catgrid{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+  .catgrid.cols-3{ grid-template-columns:repeat(3,1fr); }
+  .catgrid.cols-5{ grid-template-columns:repeat(5,1fr); }
+
+  .pcard{ background:var(--paper); border:1px solid var(--line); border-radius:16px; padding:20px; display:flex; flex-direction:column; transition:transform .25s, border-color .25s; position:relative; }
+  .pcard:hover{ transform:translateY(-4px); border-color:var(--brass); }
+  .pcard .pc-cat{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ox); font-weight:800; margin-bottom:10px; }
+  .pcard .pc-img{ height:150px; display:flex; align-items:center; justify-content:center; margin-bottom:14px; }
+  .pcard .pc-img img{ max-height:100%; max-width:74%; object-fit:contain; filter:drop-shadow(0 12px 14px rgba(33,24,24,0.22)); }
+  .pcard .pc-img.placeholder{ background:var(--paper-2); border:1px dashed var(--line-strong); border-radius:10px; flex-direction:column; gap:6px; }
+  .pcard .pc-img.placeholder span{ font-size:10px; letter-spacing:.06em; text-transform:uppercase; color:var(--ink-soft); }
+  .pcard .pc-img.placeholder svg{ width:30px; height:30px; color:var(--gray); }
+  .pcard h3{ font-size:17px; margin-bottom:4px; }
+  .pcard .pc-flavor{ font-family:'EB Garamond',serif; font-style:italic; color:var(--ink-soft); font-size:13px; margin-bottom:8px; }
+  .pcard .pc-desc{ font-size:12px; color:var(--ink-soft); line-height:1.55; margin-bottom:12px; min-height:52px; }
+  .pcard .pc-pills{ display:flex; gap:5px; flex-wrap:wrap; margin-bottom:12px; }
+  .pcard .pc-pill{ border:1px solid var(--sage); border-radius:20px; padding:3px 9px; font-size:9.5px; color:var(--sage-deep); background:rgba(126,170,139,0.1); }
+  .pcard .pc-foot{ display:flex; justify-content:space-between; align-items:baseline; margin-top:auto; padding-top:12px; border-top:1px solid var(--line); }
+  .pcard .pc-price{ font-family:'EB Garamond',serif; font-size:19px; color:var(--brass-dark); }
+  .pcard .pc-spec{ font-size:10.5px; color:var(--ink-soft); text-transform:uppercase; letter-spacing:.03em; }
+  .pc-link{ display:block; margin-top:12px; text-align:center; font-size:11px; letter-spacing:.08em; text-transform:uppercase; padding:9px; border-radius:8px; border:1px solid var(--line-strong); color:var(--ink); transition:all .2s; }
+  .pc-link:hover{ border-color:var(--brass); color:var(--brass-dark); }
+  .pc-link.disabled{ color:var(--gray); cursor:not-allowed; border-style:dashed; }
+  .pcard .pc-flag{ position:absolute; top:14px; right:14px; background:var(--ox); color:#fff; font-size:8.5px; letter-spacing:.08em; text-transform:uppercase; padding:3px 8px; border-radius:999px; font-weight:800; }
+
+  .duelers-feature{ padding:36px 32px 90px; max-width:1240px; margin:0 auto; }
+  .duelers-feature .lineup-grid{ margin-top:8px; }
+
+  .retailer-cta{
+    position:relative; background:
+      linear-gradient(rgba(33,24,24,0.72), rgba(33,24,24,0.72)),
+      url('https://i.ibb.co/JWtVGzWD/retailers-contact-background-1.jpg');
+    background-size:cover; background-position:center;
+    padding:90px 32px; text-align:center; color:var(--cream);
+  }
+  .retailer-cta .eyebrow.on-dark{ display:block; margin-bottom:14px; }
+  .retailer-cta h2{ color:#fff; font-size:32px; margin-bottom:14px; }
+  .retailer-cta p{ color:var(--cream-dim); font-size:14.5px; max-width:52ch; margin:0 auto; }
+
+  @media (max-width: 980px){
+    .catgrid, .catgrid.cols-3, .catgrid.cols-5{ grid-template-columns:repeat(2,1fr); }
+    .catalog-hero-label h1{ font-size:34px; }
+    .hero-header-in{ padding:70px 24px 60px; }
+    .pcard .pc-img{ height:320px; }
+    .pcard .pc-img img{ max-width:95%; }
+    .retailer-cta{ padding:70px 24px; }
+  }
+  @media (max-width: 620px){
+    .catgrid, .catgrid.cols-3, .catgrid.cols-5{ grid-template-columns:1fr; }
+    .catsection{ padding:60px 20px; }
+    .catalog-hero-label h1{ font-size:28px; }
+    .catalog-hero-label p{ font-size:13.5px; }
+    .hero-header-in{ padding:56px 20px 46px; }
+    .hero-banner{ max-width:100%; }
+    .pcard .pc-img{ height:380px; }
+    .pcard .pc-img img{ max-width:97%; }
+    .retailer-cta{ padding:56px 20px; }
+    .retailer-cta h2{ font-size:26px; }
+  }
+</style>
+
 </head>
 <body>
 
-<div class="topbar"><b>Concept Preview</b> &nbsp;·&nbsp; Sample Product Detail Page for blackhatdistillery.com &nbsp;·&nbsp; Must be 21+ to purchase</div>
+<div class="topbar"><b>Concept Preview</b> &nbsp;·&nbsp; Sample "All Spirits" Landing Page for blackhatdistillery.com &nbsp;·&nbsp; Must be 21+ to purchase</div>
 
 <header>
   <div class="headrow">
     <a class="logo" href="#top">
-      <div class="logo-mark"><img src="https://i.ibb.co/KknVGFH/path155.png" alt="Blackhat Distillery logo"></div>
-      <div>
-        <div class="logo-word">BLACK<span>HAT</span></div>
-        <div class="logo-sub">Distillery · Colorado Springs</div>
-      </div>
+      <img class="logo-full" src="https://i.ibb.co/KknVGFH/path155.png" alt="Blackhat Distillery logo">
+      <div class="logo-locality">Colorado Springs</div>
     </a>
     <nav class="mainnav">
-      <a href="#">Our Spirits</a>
-      <a href="#lineup">Duelers</a>
+      <a href="#top">Our Spirits</a>
+      <a href="#duelers-top">Duelers</a>
       <a href="#">Our Story</a>
       <a href="#">Tours &amp; Events</a>
     </nav>
@@ -524,411 +530,400 @@
 </header>
 
 <div class="crumbs" id="top">
-  <a href="#">Home</a><span class="sep">/</span><a href="#lineup">Duelers</a><span class="sep">/</span><span class="current" id="crumbCurrent">Double Oaked</span>
+  <a href="#">Home</a><span class="sep">/</span><span class="current">All Spirits</span>
 </div>
 
-<main class="pdp">
-  <!-- GALLERY -->
-  <div class="reveal">
-    <div class="gallery-stage" id="stage">
-      <div class="ground-shadow"></div>
-      <span class="badge-corner" id="galleryBadge">Double Oaked · 2× Silver</span>
-      <div class="bottle-scene" id="bottleScene">
-        <img id="heroImg" src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="Duelers Dark Double Oaked bottle">
-      </div>
-      <span class="zoom-hint">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
-        Click to zoom
-      </span>
-    </div>
-
-    <div class="thumbs-label">
-      <span class="eyebrow">Explore the Duelers Line</span>
-      <span class="hint">Click an expression to preview its page</span>
-    </div>
-    <div class="thumbs" id="thumbs">
-      <div class="thumb active" data-key="doubleoaked">
-        <img src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="Dark Double Oaked">
-        <span class="cap">Double Oaked</span>
-      </div>
-      <div class="thumb" data-key="blanco">
-        <img src="https://i.ibb.co/j7XWzQV/Duelers-Blanco-H080326.webp" alt="Blanco">
-        <span class="cap">Blanco</span>
-      </div>
-      <div class="thumb" data-key="dark">
-        <img src="https://i.ibb.co/zWtKBRBC/Duelers-Dark-H080326.webp" alt="Dark">
-        <span class="cap">Dark</span>
-      </div>
-      <div class="thumb" data-key="midnight">
-        <img src="https://i.ibb.co/LzvxSCPx/Duelers-Midnight-H080326.webp" alt="Midnight">
-        <span class="cap">Midnight</span>
+<!-- DUELERS — FEATURED / MAIN PRODUCT LINE -->
+<div class="hero-header" id="duelers-top">
+  <div class="hero-header-in">
+    <div class="catalog-hero-label">
+      <span class="eyebrow on-dark">The Flagship Line</span>
+      <h1>The Duelers Collection</h1>
+      <p>Our main product line and the centerpiece of the catalog — four hand-painted American Agave Spirit expressions, each with its own full product page.</p>
+      <div class="hero-banner-card">
+        <img class="hero-banner" src="https://i.ibb.co/TMWxhJmQ/Duelers-full-line-1.png" alt="The full Duelers lineup — Blanco, Dark, Dark Double Oaked, and Midnight">
       </div>
     </div>
-    <p style="font-size:11px;color:var(--ink-soft);margin-top:12px;">Product photography supplied by Blackhat Distillery. Click any bottle above — the whole page updates to that expression, showing how one template drives all 24 planned PDPs.</p>
-  </div>
-
-  <!-- BUY BOX -->
-  <div class="buybox reveal">
-    <span class="eyebrow">Duelers · <span id="prodCategory">Double Oaked Agave Spirit</span></span>
-    <h1 id="prodName">Dark Double Oaked</h1>
-    <div class="miniratings">
-      <span class="starrow">
-        <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-        <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-      </span>
-      <a href="#panel-reviews" id="jumpToReviews">4.8 (47 reviews)</a>
-    </div>
-    <div class="subline">"We're creating a new space for American Agave Spirits; we're threading the needle between tequila and whiskey." <span style="font-family:'Nunito Sans',sans-serif;font-style:normal;font-size:12.5px;color:var(--ink-soft);display:block;margin-top:6px;letter-spacing:.02em;">— Kyle Bonasso, Head Distiller</span></div>
-
-    <div class="awardrow" id="awardRow"></div>
-
-    <p class="desc" id="prodDesc"></p>
-
-    <div class="specpills">
-      <div class="specpill"><b id="specAbv">50%</b>ABV</div>
-      <div class="specpill"><b id="specProof">100</b>Proof</div>
-      <div class="specpill"><b>750ml</b>Bottle</div>
-      <div class="specpill"><b id="specOak">French + American Oak</b>Cask</div>
-    </div>
-
-    <div class="flavorpills" id="flavorNotes"></div>
-
-    <div class="priceline">
-      <span class="price" id="price">$125.00</span>
-      <span class="price-note" style="border-style:solid;">SRP</span>
-    </div>
-    <div class="skuline" id="skuLine">SKU BHTR-DDDO* · UPC 198715908244</div>
-
-    <div class="size-select">
-      <div class="label">Format</div>
-      <div class="size-options">
-        <button class="size-opt selected">750ml</button>
-        <button class="size-opt" disabled>375ml — coming soon</button>
-        <button class="size-opt" disabled>Gift Set — coming soon</button>
-      </div>
-    </div>
-
-    <div class="buyrow">
-      <div class="qty">
-        <button id="qtyMinus" aria-label="Decrease quantity">–</button>
-        <input id="qtyInput" value="1" inputmode="numeric">
-        <button id="qtyPlus" aria-label="Increase quantity">+</button>
-      </div>
-      <button class="addcart" id="addCart">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l2.4 12.4a2 2 0 0 0 2 1.6h8.4a2 2 0 0 0 2-1.6L22 8H6"/></svg>
-        <span id="addCartLabel">Add to Cart</span>
-      </button>
-    </div>
-
-    <div class="paymethods">
-      <span class="pm-label">We Accept</span>
-      <span class="pm-icons"><span>VISA</span><span>MC</span><span>AMEX</span><span>APPLE PAY</span><span>GPAY</span></span>
-    </div>
-
-    <div class="ctatrust">
-      <span class="ct"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Secure Checkout</span>
-      <span class="ct"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Age &amp; ID Verified at Delivery</span>
-      <span class="ct"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-3-6.2"/><path d="M20 4v5h-5"/></svg>Easy Returns Through Retailer</span>
-    </div>
-
-    <div class="availbox">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="10" width="13" height="9" rx="1"/><path d="M16 13h3l2 3v3h-5z"/><circle cx="7.5" cy="20.5" r="1.5"/><circle cx="17.5" cy="20.5" r="1.5"/></svg>
-      <div>
-        <div class="at-title">Sold Through Retail Partners</div>
-        <div class="at-sub">Blackhat spirits aren't shipped direct — find this expression at a liquor store near you or ask your local retailer to order it in. Each batch is small and limited, so availability shifts release to release.</div>
-        <div class="at-sub">Prefer to buy in person? Bottles are also available by the pour or to take home at our Colorado Springs tasting room.</div>
-        <div class="at-sub">Returns &amp; exchanges follow the policy of the retailer where you purchased — we're not able to process returns directly since we don't sell or ship bottles ourselves.</div>
-      </div>
-    </div>
-
-    <div class="microcopy">
-      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="flex:none;margin-top:2px;"><circle cx="12" cy="12" r="9"/><path d="M12 8v5M12 16h.01"/></svg>
-      Must be 21+ to purchase. Please drink responsibly.
-    </div>
-
-    <div class="trustrow">
-      <div class="trust">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2 3 6v6c0 5 4 8.5 9 10 5-1.5 9-5 9-10V6z"/></svg>
-        <span>Small-Batch<br>Colorado Distilled</span>
-      </div>
-      <div class="trust">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="9" r="6"/><path d="M8 14.5 6 21l6-3 6 3-2-6.5"/></svg>
-        <span>Award-Winning<br>2025 Competitions</span>
-      </div>
-      <div class="trust">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" style="color:var(--sage);"><ellipse cx="12" cy="20.5" rx="4.5" ry="1.4"/><path d="M12 20.5 C11 14 11 7 12 3 C13 7 13 14 12 20.5 Z"/><path d="M12 20.5 C13.2 15 15.5 9.5 18.5 5.5 C16.3 10.3 14.3 16 12 20.5 Z"/><path d="M12 20.5 C10.8 15 8.5 9.5 5.5 5.5 C7.7 10.3 9.7 16 12 20.5 Z"/><path d="M12 20.5 C13.8 16.2 17 12.5 20.5 10 C17.8 14 14.8 18 12 20.5 Z"/><path d="M12 20.5 C10.2 16.2 7 12.5 3.5 10 C6.2 14 9.2 18 12 20.5 Z"/></svg>
-        <span>100% Blue Weber<br>Agave, Jalisco Highlands</span>
-      </div>
-    </div>
-  </div>
-</main>
-
-<!-- STICKY BAR -->
-<div class="stickybar" id="stickyBar">
-  <div class="stickybar-in">
-    <img class="mini-bottle" id="stickyImg" src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="">
-    <div class="info">
-      <div class="name" id="stickyName">Duelers Double Oaked</div>
-      <div class="sub">750ml</div>
-    </div>
-    <div class="price" id="stickyPrice">$49.00</div>
-    <div class="qty">
-      <button id="qtyMinus2">–</button>
-      <input id="qtyInput2" value="1" inputmode="numeric">
-      <button id="qtyPlus2">+</button>
-    </div>
-    <button class="addcart" id="addCart2">
-      <span id="addCartLabel2">Add to Cart</span>
-    </button>
   </div>
 </div>
 
-<!-- TABS -->
-<section class="tabsection reveal">
-  <div class="tabbar">
-    <button class="tabbtn active" data-tab="notes">Tasting Notes</button>
-    <button class="tabbtn" data-tab="craft">The Craft</button>
-    <button class="tabbtn" data-tab="awards">Awards &amp; Recognition</button>
-    <button class="tabbtn" data-tab="serve">How to Serve</button>
-    <button class="tabbtn" data-tab="reviews">Reviews <span style="opacity:.65;font-size:11px;">(47)</span></button>
-  </div>
-
-  <div class="tabpanel active" id="panel-notes">
-    <div class="notegrid" id="noteCards"></div>
-    <p class="footnote">Notes expanded from Blackhat's published flavor descriptors for this expression. Final copy should be reviewed against the master tasting panel before publishing.</p>
-  </div>
-
-  <div class="tabpanel" id="panel-craft">
-    <div class="craftgrid">
-      <div>
-        <p>Duelers began as an attempt to build something new between two traditions — not a tequila, and not a whiskey, but a spirit disciplined by both. Every batch starts with 100% Blue Weber agave, grown in the Highlands of Jalisco by a farmer-owned producer, then cut with pure Rocky Mountain water back home in Colorado Springs.</p>
-        <p>Fermentation with a specialty yeast strain builds the line's signature soft, sweet-and-spiced palate, and clean, precise distillation cuts keep the spirit's character intact through to the barrel. <span id="craftNote">For Double Oaked, that spirit spends extra time resting on a second cask — French and American oak, often previously used to age whiskey — adding the depth and structure that give this expression its name.</span></p>
-        <div class="quoteblock">
-          Duelers is the start of something truly different in the world of spirits.
-          <cite>— Blackhat Distillery, on the Duelers line</cite>
+<div class="featured-band">
+  <div class="duelers-feature">
+    <main class="pdp" style="padding-bottom:50px;">
+      <div class="reveal">
+        <div class="gallery-stage" id="duelStage">
+          <div class="ground-shadow"></div>
+          <span class="badge-corner" id="duelBadge">Double Oaked · 2× Silver</span>
+          <div class="bottle-scene" id="duelScene">
+            <img id="duelHeroImg" src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="Duelers Dark Double Oaked bottle">
+          </div>
+          <span class="zoom-hint">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            Click to zoom
+          </span>
+        </div>
+        <div class="thumbs-label">
+          <span class="eyebrow">Explore the Duelers Line</span>
+          <span class="hint">Click an expression to preview</span>
+        </div>
+        <div class="thumbs" id="duelThumbs">
+          <div class="thumb active" data-key="doubleoaked"><img src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="Dark Double Oaked"><span class="cap">Double Oaked</span></div>
+          <div class="thumb" data-key="blanco"><img src="https://i.ibb.co/j7XWzQV/Duelers-Blanco-H080326.webp" alt="Blanco"><span class="cap">Blanco</span></div>
+          <div class="thumb" data-key="dark"><img src="https://i.ibb.co/zWtKBRBC/Duelers-Dark-H080326.webp" alt="Dark"><span class="cap">Dark</span></div>
+          <div class="thumb" data-key="midnight"><img src="https://i.ibb.co/LzvxSCPx/Duelers-Midnight-H080326.webp" alt="Midnight"><span class="cap">Midnight</span></div>
         </div>
       </div>
-      <ul class="factlist">
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><ellipse cx="12" cy="20.5" rx="4.5" ry="1.4"/><path d="M12 20.5 C11 14 11 7 12 3 C13 7 13 14 12 20.5 Z"/><path d="M12 20.5 C13.2 15 15.5 9.5 18.5 5.5 C16.3 10.3 14.3 16 12 20.5 Z"/><path d="M12 20.5 C10.8 15 8.5 9.5 5.5 5.5 C7.7 10.3 9.7 16 12 20.5 Z"/><path d="M12 20.5 C13.8 16.2 17 12.5 20.5 10 C17.8 14 14.8 18 12 20.5 Z"/><path d="M12 20.5 C10.2 16.2 7 12.5 3.5 10 C6.2 14 9.2 18 12 20.5 Z"/></svg>
-          <div><b>100% Blue Weber Agave</b><span>Sourced from a farmer-owned producer in the Highlands of Jalisco.</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M4 12h16"/></svg>
-          <div><b>Rocky Mountain Water</b><span>Cut to proof with pure water sourced near the Colorado Springs distillery.</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v12a8 3 0 0 0 16 0V6"/></svg>
-          <div><b id="factOakTitle">Double-Oak Finish</b><span id="factOakDesc">Rested a second time on French and American oak, often ex-whiskey barrels.</span></div>
-        </li>
-        <li>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          <div><b>Small, Disciplined Batches</b><span>Distilled and bottled in Colorado Springs, Colorado.</span></div>
-        </li>
-      </ul>
-    </div>
-  </div>
 
-  <div class="tabpanel" id="panel-awards">
-    <div class="awardgrid" id="awardCards"></div>
-    <p class="footnote">Award data pulled from the Duelers line overview on blackhatdistillery.com. Recommend linking to full competition results if available.</p>
-  </div>
+      <div class="buybox reveal">
+        <span class="eyebrow">Duelers · <span id="duelCategory">Double Oaked Agave Spirit</span></span>
+        <h2 id="duelName" style="font-size:38px;margin-bottom:8px;">Dark Double Oaked</h2>
+        <div class="miniratings">
+          <span class="starrow">
+            <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+            <svg viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
+          </span>
+          <a href="blackhat-duelers-pdp-concept.html#panel-reviews">4.8 (47 reviews)</a>
+        </div>
+        <p class="desc" id="duelDesc"></p>
+        <div class="specpills">
+          <div class="specpill"><b id="duelAbv">50%</b>ABV</div>
+          <div class="specpill"><b id="duelProof">100</b>Proof</div>
+          <div class="specpill"><b>750ml</b>Bottle</div>
+        </div>
+        <div class="flavorpills" id="duelFlavor"></div>
+        <div class="priceline">
+          <span class="price" id="duelPrice">$125.00</span>
+          <span class="price-note" style="border-style:solid;">SRP</span>
+        </div>
+        <div class="skuline" id="duelSku">SKU BHTR-DDDO* · UPC 198715908244</div>
+        <a class="pc-link" id="duelCta" href="blackhat-duelers-pdp-concept.html" style="display:block;max-width:280px;margin-top:14px;">View Full Product Page →</a>
 
-  <div class="tabpanel" id="panel-serve">
-    <div class="servewrap">
-      <div>
-        <div class="accordion">
-          <div class="acc-item open">
-            <button class="acc-head"><span id="serveNeatTitle">Neat or Over Ice</span> <span class="plus">+</span></button>
-            <div class="acc-body"><div class="acc-body-in" id="serveNeatText">Served neat in a rocks glass, this expression's character comes through most clearly. A single large-format ice cube slows dilution while opening the aroma.</div></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-head"><span id="serveRecipeTitle">Suggested Serve: Duelers Old Fashioned</span> <span class="plus">+</span></button>
-            <div class="acc-body"><div class="acc-body-in">
-              <span id="serveRecipeIntro">A whiskey-style build that lets any Duelers expression lead.</span>
-              <ul id="serveRecipeList">
-                <li>2 oz Duelers (any expression)</li>
-                <li>1 sugar cube or 1/4 oz simple syrup</li>
-                <li>2 dashes aromatic bitters</li>
-                <li>Orange peel, expressed and dropped in</li>
-              </ul>
-            </div></div>
-          </div>
-          <div class="acc-item">
-            <button class="acc-head">Storage &amp; Handling <span class="plus">+</span></button>
-            <div class="acc-body"><div class="acc-body-in">Store upright, away from direct sunlight, at room temperature. Once opened, best enjoyed within 12 months for peak flavor.</div></div>
+        <div class="ctatrust">
+          <span class="ct"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="10" width="16" height="10" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg>Secure Checkout</span>
+          <span class="ct"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Age &amp; ID Verified at Delivery</span>
+          <span class="ct"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12a8 8 0 1 1-3-6.2"/><path d="M20 4v5h-5"/></svg>Easy Returns Through Retailer</span>
+        </div>
+
+        <div class="availbox">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="10" width="13" height="9" rx="1"/><path d="M16 13h3l2 3v3h-5z"/><circle cx="7.5" cy="20.5" r="1.5"/><circle cx="17.5" cy="20.5" r="1.5"/></svg>
+          <div>
+            <div class="at-title">Sold Through Retail Partners</div>
+            <div class="at-sub">Blackhat spirits aren't shipped direct — find this expression at a liquor store near you or ask your local retailer to order it in.</div>
           </div>
         </div>
       </div>
-      <div class="servenote">
-        <span class="eyebrow">A Note From the Distillery</span>
-        <h3 style="margin:10px 0 12px;font-size:20px;" id="serveNoteTitle">Best Enjoyed Slowly</h3>
-        <p id="serveNoteText">Every Duelers expression is built for sipping. Distillery staff recommend letting it breathe for a few minutes after pouring before the first sip.</p>
-        <p style="margin-top:14px;color:var(--ink-soft);font-size:12px;">Draft serving content — none of this exists yet on your side, so treat this as a starting point for the tasting room team to edit or replace.</p>
-      </div>
-    </div>
+    </main>
   </div>
+</div>
 
-  <div class="tabpanel" id="panel-reviews">
-    <div class="reviewswrap">
-      <div>
-        <div class="ratingsummary">
-          <div class="big">4.8</div>
-          <div class="starrow">
-            <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-          </div>
-          <div class="count">Based on 47 verified reviews</div>
-
-          <div class="ratingbars">
-            <div class="rbrow"><span class="lbl">5 star</span><div class="track"><div class="fill" style="width:78%;"></div></div><span class="pct">78%</span></div>
-            <div class="rbrow"><span class="lbl">4 star</span><div class="track"><div class="fill" style="width:15%;"></div></div><span class="pct">15%</span></div>
-            <div class="rbrow"><span class="lbl">3 star</span><div class="track"><div class="fill" style="width:4%;"></div></div><span class="pct">4%</span></div>
-            <div class="rbrow"><span class="lbl">2 star</span><div class="track"><div class="fill" style="width:2%;"></div></div><span class="pct">2%</span></div>
-            <div class="rbrow"><span class="lbl">1 star</span><div class="track"><div class="fill" style="width:1%;"></div></div><span class="pct">1%</span></div>
-          </div>
-
-          <div class="aspectlist">
-            <div class="arow"><span>Smoothness</span><div class="track"><div class="fill" style="width:94%;"></div></div><span>4.7</span></div>
-            <div class="arow"><span>Aroma</span><div class="track"><div class="fill" style="width:98%;"></div></div><span>4.9</span></div>
-            <div class="arow"><span>Value</span><div class="track"><div class="fill" style="width:90%;"></div></div><span>4.5</span></div>
-          </div>
+<!-- WHISKEY & BOURBON -->
+<section class="catsection reveal" id="whiskey-bourbon">
+  <div class="catsection-head">
+    <div><span class="eyebrow">Blackhat Line</span><h2 style="margin-top:8px;">Whiskey &amp; Bourbon</h2></div>
+    <p>Five expressions, from the everyday Blackhat Whiskey to limited beer-barrel finishing series releases.</p>
+  </div>
+  <div class="catgrid">
+    <div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/9m1HKqnb/Whiskey-H080326.webp" alt="Blackhat Whiskey"></div>
+        <div class="pc-cat">Straight Bourbon Whiskey</div>
+        <h3>Blackhat Whiskey</h3>
+        <div class="pc-flavor">Smooth, approachable, and balanced</div>
+        <p class="pc-desc">Crafted for easy enjoyment while still offering depth and character. A bright, nutty aroma with hints of fruit opens into a soft caramel palate.</p>
+        <div class="pc-pills"><span class="pc-pill">Nutty</span><span class="pc-pill">Caramel</span><span class="pc-pill">Fruit</span><span class="pc-pill">Toasted Oak</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$45.99</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
         </div>
-        <p class="footnote">Ratings shown are sample placeholder data for this concept. Replace with real review platform data (Yotpo, Judge.me, Okendo, etc.) at launch.</p>
-      </div>
-
-      <div>
-        <div class="reviewlist" id="reviewList">
-          <div class="reviewcard">
-            <div class="rc-head">
-              <div class="rc-who">Marcus T. <span class="verified-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Verified Purchase</span></div>
-              <div class="rc-date">July 2026</div>
-            </div>
-            <div class="starrow">
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            </div>
-            <div class="rc-title">Worth tracking down</div>
-            <div class="rc-body">Picked this up on a recommendation from the store and it's become my go-to for after dinner. The double-oak really comes through — cinnamon and dried fruit up front, long espresso finish. Not overly sweet like some agave spirits.</div>
-            <div class="rc-foot"><button class="helpfulbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 22V11M2 13v7a2 2 0 0 0 2 2h12.5a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 18 11h-5l1-5a2 2 0 0 0-2-2.3L7 11"/></svg>Helpful (12)</button></div>
-          </div>
-
-          <div class="reviewcard">
-            <div class="rc-head">
-              <div class="rc-who">Dana R. <span class="verified-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Verified Purchase</span></div>
-              <div class="rc-date">June 2026</div>
-            </div>
-            <div class="starrow">
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-empty" viewBox="0 0 24 24" stroke-width="1.4"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            </div>
-            <div class="rc-title">Great sipper, a little pricey</div>
-            <div class="rc-body">The flavor is genuinely unique — I don't know another category to compare it to. Smooth enough to drink neat. Only reason it's not five stars is I wish it came in a smaller/cheaper size to try before committing to the full bottle.</div>
-            <div class="rc-foot"><button class="helpfulbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 22V11M2 13v7a2 2 0 0 0 2 2h12.5a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 18 11h-5l1-5a2 2 0 0 0-2-2.3L7 11"/></svg>Helpful (7)</button></div>
-          </div>
-
-          <div class="reviewcard">
-            <div class="rc-head">
-              <div class="rc-who">Chris W. <span class="verified-badge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="9"/></svg>Verified Purchase</span></div>
-              <div class="rc-date">May 2026</div>
-            </div>
-            <div class="starrow">
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-              <svg class="star-fill" viewBox="0 0 24 24" stroke-width="1"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01z"/></svg>
-            </div>
-            <div class="rc-title">Bought a case for the holidays</div>
-            <div class="rc-body">Brought a bottle to a family get-together and ended up ordering a case for gifts. Everyone who tried it asked where to find it locally — had to explain the whole "ask your liquor store" thing, which was a bit of friction but worth it.</div>
-            <div class="rc-foot"><button class="helpfulbtn"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 22V11M2 13v7a2 2 0 0 0 2 2h12.5a2 2 0 0 0 2-1.6l1.4-7A2 2 0 0 0 18 11h-5l1-5a2 2 0 0 0-2-2.3L7 11"/></svg>Helpful (21)</button></div>
-          </div>
+        <a class="pc-link" href="blackhat-whiskey-pdp-concept.html">View Product Page →</a>
+      </div><div class="pcard">
+        <div class="pc-img"><img src="https://i.ibb.co/Z1bPtxvM/Bourbon-Whiskey-H080326.webp" alt="Blackhat Bourbon"></div>
+        <div class="pc-cat">Blended Bourbon Whiskey</div>
+        <h3>Blackhat Bourbon</h3>
+        <div class="pc-flavor">Rich, spiced, and elegant</div>
+        <p class="pc-desc">Our signature expression — aged a minimum of 4 years from a proprietary blend of two distinct bourbons. Honeyed sweetness and floral aromatics lead into rich spice, caramel, and toffee.</p>
+        <div class="pc-pills"><span class="pc-pill">Honey</span><span class="pc-pill">Rye Spice</span><span class="pc-pill">Caramel</span><span class="pc-pill">Toffee</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$59.99</span>
+          <span class="pc-spec">50% ABV · 100 Proof</span>
         </div>
-        <a href="#" class="writereview" id="writeReviewLink">Write a Review</a>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/rKpG4X8q/Bourbon-Barrel-Strength.webp" alt="Barrel Strength Bourbon"></div>
+        <div class="pc-cat">Barrel Strength Bourbon (53.5% ABV)</div>
+        <h3>Barrel Strength Bourbon</h3>
+        <div class="pc-flavor">Bold, powerful, and full-bodied</div>
+        <p class="pc-desc">A full-strength expression of Blackhat craftsmanship — dark brown sugar, toasted oak, maple toffee, and warm baking spice, with a long, warming finish.</p>
+        <div class="pc-pills"><span class="pc-pill">Brown Sugar</span><span class="pc-pill">Oak</span><span class="pc-pill">Maple</span><span class="pc-pill">Nutmeg</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$150.00</span>
+          <span class="pc-spec">53.5% ABV · 107 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/TD8JK0Hk/Bourbon-Whiskey-Stout-Barrel-H080326.webp" alt="Blackhat Stout Bourbon"></div>
+        <div class="pc-cat">Beer-Finished Bourbon</div>
+        <h3>Blackhat Stout Bourbon</h3>
+        <div class="pc-flavor">Robust, roasted, and expressive</div>
+        <p class="pc-desc">Small-batch Blackhat Bourbon finished in used stout beer barrels after initial aging in new oak. Notes of roasted coffee and dark chocolate.</p>
+        <div class="pc-pills"><span class="pc-pill">Coffee</span><span class="pc-pill">Toffee</span><span class="pc-pill">Nutty</span><span class="pc-pill">Oak</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$150.00</span>
+          <span class="pc-spec">50% ABV · 100 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/TBb9zZJy/Bourbon-Whiskey-Barley-Wine-H080326.webp" alt="Barley Wine Bourbon"></div>
+        <div class="pc-cat">Beer-Finished Bourbon</div>
+        <h3>Barley Wine Bourbon</h3>
+        <div class="pc-flavor">Malty, sweet, and layered</div>
+        <p class="pc-desc">Small-batch Blackhat Bourbon finished in used barley wine beer barrels after initial aging in new oak. Rich notes of toffee, caramel, and dried fruit.</p>
+        <div class="pc-pills"><span class="pc-pill">Toffee</span><span class="pc-pill">Malt</span><span class="pc-pill">Nutty</span><span class="pc-pill">Dried Fruit</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$125.00</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
       </div>
-    </div>
   </div>
 </section>
 
-<!-- BRAND STORY (BLACK SECTION) -->
-<section class="story reveal">
-  <div class="story-in">
-    <div>
-      <span class="eyebrow on-dark">Every Label, Hand-Painted</span>
-      <h2>An Original by Phil Lear</h2>
-      <p>Each bottle in the Duelers line carries original painted artwork by Colorado Springs artist Phil Lear, whose expressive realism and cinematic use of light give the line its distinctive, gallery-worthy presence on the shelf.</p>
-      <p>It's a detail that turns every Duelers bottle into something worth displaying long after it's empty — consistent with a line built to feel deliberate in every part of the experience, right down to the label. From the barrels to the tasting room, the same craftsmanship shows up throughout the Blackhat distillery in Colorado Springs.</p>
-      <div class="sig">— Blackhat Distillery, on the Duelers bottle art</div>
-    </div>
-    <div class="story-photos">
-      <span class="story-badge">Colorado Springs, CO</span>
-      <div class="story-photo p1">
-        <img src="https://i.ibb.co/TMpSdjbw/631098322-1512603294203763-2795901284877174690-n-Copy.jpg" alt="Barrel aging room at Blackhat Distillery, Colorado Springs">
-        <span class="cap">Blackhat Distillery</span>
+<!-- CORE SPIRITS -->
+<section class="catsection reveal" id="core-spirits">
+  <div class="catsection-head">
+    <div><span class="eyebrow">Blackhat Line</span><h2 style="margin-top:8px;">Agave, Gin, Rum &amp; Vodka</h2></div>
+    <p>The foundational Blackhat spirits — including the original agave recipe that led to Duelers.</p>
+  </div>
+  <div class="catgrid">
+    <div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/sJFY6rPM/Agave-H080326.webp" alt="Blackhat Agave"></div>
+        <div class="pc-cat">Agave Spirit</div>
+        <h3>Blackhat Agave</h3>
+        <div class="pc-flavor">Grassy with citrus</div>
+        <p class="pc-desc">The Blackhat classic — crafted from 100% Blue Weber Agave and blended with pure Rocky Mountain water. Our first agave recipe and a smooth, flavorful cornerstone of the lineup.</p>
+        <div class="pc-pills"><span class="pc-pill">Grassy</span><span class="pc-pill">Citrus</span><span class="pc-pill">Agave</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$29.99</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/HDMwxct9/Gin-H080326.webp" alt="Blackhat Gin"></div>
+        <div class="pc-cat">Blended Gin</div>
+        <h3>Blackhat Gin</h3>
+        <div class="pc-flavor">Botanical, citrus forward</div>
+        <p class="pc-desc">A bold and captivating signature gin, blended with meticulous precision for a crisp, assertive character.</p>
+        <div class="pc-pills"><span class="pc-pill">Citrus</span><span class="pc-pill">Orange</span><span class="pc-pill">Juniper</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$24.99</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/7dr2ZBQx/Rum-H080326.webp" alt="Blackhat Rum"></div>
+        <div class="pc-cat">Caribbean Blended Rum</div>
+        <h3>Blackhat Rum</h3>
+        <div class="pc-flavor">Robust with tropical sweetness</div>
+        <p class="pc-desc">The vibrant essence of the Caribbean — a masterfully crafted blend that brings the heart of the islands straight to your glass.</p>
+        <div class="pc-pills"><span class="pc-pill">Fruity</span><span class="pc-pill">Oak</span><span class="pc-pill">Sweet & Spice</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$27.99</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/20jCrLgN/Vodka.webp" alt="Blackhat Vodka"></div>
+        <div class="pc-cat">Wheat Vodka</div>
+        <h3>Blackhat Vodka</h3>
+        <div class="pc-flavor">Light, crisp, and subtly sweet</div>
+        <p class="pc-desc">Made from 100% German wheat and blended with pure Rocky Mountain water — easy to mix, easy to sip, exceptionally smooth.</p>
+        <div class="pc-pills"><span class="pc-pill">Crisp</span><span class="pc-pill">Light Sweetness</span><span class="pc-pill">Creamy</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$24.99</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
       </div>
-      <div class="story-photo p2">
-        <img src="https://i.ibb.co/QjXWVV3m/749223348-1664816058982485-158308341410450744-n-Copy.jpg" alt="Production floor and tasting room at Blackhat Distillery, Colorado Springs">
-      </div>
-    </div>
   </div>
 </section>
 
-<!-- LINEUP -->
-<section class="lineup reveal" id="lineup">
-  <div class="lineup-head">
-    <div>
-      <span class="eyebrow">Explore the Line</span>
-      <h2 style="margin-top:10px;">The Duelers Collection</h2>
-    </div>
-    <p>Each expression gets its own dedicated product page in the full 24-page rollout — this is how they'd cross-link from one another.</p>
+<!-- ROYALS + REBELS -->
+<section class="catsection reveal" id="royals-rebels">
+  <div class="catsection-head">
+    <div><span class="eyebrow">Distilled Products</span><h2 style="margin-top:8px;">Royals + Rebels Rum</h2></div>
+    <p>Three aged and flavored rum expressions under the Royals + Rebels name.</p>
   </div>
-  <div class="lineup-grid" id="lineupGrid"></div>
+  <div class="catgrid cols-3">
+    <div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/B2pYkKmK/Royals-Rebels-Rum.webp" alt="Royals + Rebels Rum"></div>
+        <div class="pc-cat">Aged Rum</div>
+        <h3>Royals + Rebels Rum</h3>
+        <div class="pc-flavor">Robust and spiced</div>
+        <p class="pc-desc">Crafted from cane sugar and molasses, delivering notes of fruit, spice, and light brown sugar.</p>
+        <div class="pc-pills"><span class="pc-pill">Spiced Oak</span><span class="pc-pill">Stone Fruit</span><span class="pc-pill">Pepper</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$39.99</span>
+          <span class="pc-spec">42.5% ABV · 85 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/b9Z5M3v/Royals-Rebels-Island-Rum.webp" alt="Royals + Rebels Island Rum"></div>
+        <div class="pc-cat">Aged Rum</div>
+        <h3>Royals + Rebels Island Rum</h3>
+        <div class="pc-flavor">Molasses forward</div>
+        <p class="pc-desc">A traditional rum created from 100% molasses, delivering notes of licorice, baking spice, and dark brown sugar.</p>
+        <div class="pc-pills"><span class="pc-pill">Molasses</span><span class="pc-pill">Anise</span><span class="pc-pill">Dark Brown Sugar</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$49.99</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/3y1fG019/Royals-Rebels-Vanilla-Rum-H080326.webp" alt="Royals + Rebels Vanilla Rum"></div>
+        <div class="pc-cat">Flavored Rum</div>
+        <h3>Royals + Rebels Vanilla Rum</h3>
+        <div class="pc-flavor">Delicate vanilla</div>
+        <p class="pc-desc">Sweet, warm vanilla notes and a bold finish.</p>
+        <div class="pc-pills"><span class="pc-pill">Vanilla</span><span class="pc-pill">Fruity</span><span class="pc-pill">Smooth</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$125.00</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div>
+  </div>
 </section>
 
-<!-- CROSS-SELL -->
-<section class="alsolike reveal">
-  <div class="alsolike-head">
-    <span class="eyebrow">You Might Also Like</span>
-    <h2>From the Same Distillery</h2>
+<!-- LIQUEURS & SPECIALTY -->
+<section class="catsection reveal" id="liqueurs">
+  <div class="catsection-head">
+    <div><span class="eyebrow">Blackhat Line</span><h2 style="margin-top:8px;">Liqueurs &amp; Specialty</h2></div>
+    <p>Specialty rum, limoncello, triple sec, and two coffee liqueurs — including one that supports the LALMBA organization.</p>
   </div>
-  <a class="alsocard" href="blackhat-whiskey-pdp-concept.html">
-    <div class="ac-img"><img src="https://i.ibb.co/9m1HKqnb/Whiskey-H080326.webp" alt="Blackhat Whiskey bottle"></div>
-    <div class="ac-body">
-      <div class="ac-cat">Straight Bourbon Whiskey</div>
-      <h3>Blackhat Whiskey</h3>
-      <p>Smooth, approachable, and balanced — a nutty, caramel-forward bourbon built for easy sipping, from the same Colorado Springs distillery.</p>
-    </div>
-    <span class="ac-cta">View Product →</span>
-  </a>
+  <div class="catgrid cols-5">
+    <div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/3ycZNzbW/Golden-Hearth-H080326.webp" alt="Golden Hearth Cinnamon Pineapple Rum"></div>
+        <div class="pc-cat">Specialty Rum</div>
+        <h3>Golden Hearth Cinnamon Pineapple Rum</h3>
+        <div class="pc-flavor">Cinnamon and pineapple</div>
+        <p class="pc-desc">A sweet and fruity specialty rum with a touch of spice — warm cinnamon aroma with a rich palate of pineapple and vanilla.</p>
+        <div class="pc-pills"><span class="pc-pill">Cinnamon</span><span class="pc-pill">Pineapple</span><span class="pc-pill">Vanilla</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$49.99</span>
+          <span class="pc-spec">25% ABV · 50 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        
+        <div class="pc-img"><img src="https://i.ibb.co/k6VQd9Vg/Lucciola-H080326-1.webp" alt="Lucciola Limoncello"></div>
+        <div class="pc-cat">Lemon Liqueur (Enjoy Chilled)</div>
+        <h3>Lucciola Limoncello</h3>
+        <div class="pc-flavor">Tart lemon with rum undertones</div>
+        <p class="pc-desc">A vibrant blend of citrus brilliance, crafted with Blackhat's award-winning Royals and Rebels Rum for added depth and complexity.</p>
+        <div class="pc-pills"><span class="pc-pill">Lemonade</span><span class="pc-pill">Tart</span><span class="pc-pill">Rum</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$49.99</span>
+          <span class="pc-spec">30% ABV · 60 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        <div class="pc-img"><img src="https://i.ibb.co/FLPGnWtf/Triple-Sec-H080326.webp" alt="Triple Sec"></div>
+        <div class="pc-cat">Orange Liqueur</div>
+        <h3>Triple Sec</h3>
+        <div class="pc-flavor">Sweet orange</div>
+        <p class="pc-desc">A vibrant blend of citrus flavors made from hand-peeled oranges — bold, sun-ripened zest balanced by a smooth, velvety finish.</p>
+        <div class="pc-pills"><span class="pc-pill">Orange Citrus</span><span class="pc-pill">Sugar</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$29.99</span>
+          <span class="pc-spec">30% ABV · 60 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        <div class="pc-img"><img src="https://i.ibb.co/DfddrdN6/Galletoo.webp" alt="Galletoo"></div>
+        <div class="pc-cat">Coffee Liqueur</div>
+        <h3>Galletoo</h3>
+        <div class="pc-flavor">Bold, complex, and expressive</div>
+        <p class="pc-desc">High-end coffee liqueur made with real African coffee beans — silky, full-bodied, with proceeds benefiting the LALMBA organization.</p>
+        <div class="pc-pills"><span class="pc-pill">Coffee</span><span class="pc-pill">Bright Acidity</span><span class="pc-pill">Vanilla</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$49.00</span>
+          <span class="pc-spec">32% ABV · 64 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div><div class="pcard">
+        <div class="pc-img"><img src="https://i.ibb.co/q3R95HwW/Lebowski-s-Kool-Coffee-Liqueur.webp" alt="Lebowski's Kool Coffee Liqueur"></div>
+        <div class="pc-cat">Coffee Liqueur</div>
+        <h3>Lebowski's Kool Coffee Liqueur</h3>
+        <div class="pc-flavor">Coffee balanced with vanilla sweetness</div>
+        <p class="pc-desc">Made with premium vodka and the finest Colombian coffee — smooth, rich, with hints of sweetness and a velvety finish.</p>
+        <div class="pc-pills"><span class="pc-pill">Coffee</span><span class="pc-pill">Vanilla</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$42.99</span>
+          <span class="pc-spec">20% ABV · 40 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div>
+  </div>
+</section>
+
+<!-- PRIVATE LABEL -->
+<section class="catsection reveal" id="private-label">
+  <div class="catsection-head">
+    <div><span class="eyebrow">Private Label</span><h2 style="margin-top:8px;">Tanto Vodka</h2></div>
+    <p>Produced for a private-label partner brand.</p>
+  </div>
+  <div class="catgrid cols-3">
+    <div class="pcard">
+        <div class="pc-img"><img src="https://i.ibb.co/H3Tt1Gk/Tanto-Vodka-2.webp" alt="Tanto Vodka"></div>
+        <div class="pc-cat">Wheat Vodka · Private Label</div>
+        <h3>Tanto Vodka</h3>
+        <div class="pc-flavor">Light, crisp, and subtly sweet</div>
+        <p class="pc-desc">A premium American vodka that embodies the resilience of its founders, Ben Morgan and Kris “Tanto” Paronto, former members of the elite 75th Ranger Regiment.</p>
+        <div class="pc-pills"><span class="pc-pill">Crisp</span><span class="pc-pill">Light Sweetness</span><span class="pc-pill">Creamy</span></div>
+        <div class="pc-foot">
+          <span class="pc-price">$26.99</span>
+          <span class="pc-spec">40% ABV · 80 Proof</span>
+        </div>
+        <span class="pc-link disabled">Product Page Coming Soon</span>
+      </div>
+  </div>
+</section>
+
+<section class="retailer-cta reveal">
+  <span class="eyebrow on-dark">Find Blackhat Near You</span>
+  <h2>Available at Retailers Across Colorado</h2>
+  <p>All 22 Blackhat Distillery spirits are sold through retail partners rather than shipped direct — ask your local liquor store, or check with the distillery for current locations.</p>
 </section>
 
 <footer>
   <div class="foot-in">
     <div class="foot-left">
-      <div class="logo-mark"><img src="https://i.ibb.co/KknVGFH/path155.png" alt="Blackhat Distillery logo"></div>
+      <img class="foot-logo-full" src="https://i.ibb.co/KknVGFH/path155.png" alt="Blackhat Distillery logo">
       <div>
-        <div class="logo-word">BLACK<span>HAT</span></div>
         <p>3104 N Nevada Ave Ste 120, Colorado Springs, CO 80907. Please enjoy responsibly — must be 21+ to purchase.</p>
       </div>
     </div>
     <div class="foot-right">
       <div class="foot-col">
         <span>Shop</span>
-        <a href="#">All Spirits</a>
-        <a href="#lineup">Duelers</a>
-        <a href="#">Where to Buy</a>
+        <a href="#duelers-top">Duelers</a>
+        <a href="#whiskey-bourbon">Whiskey &amp; Bourbon</a>
+        <a href="#core-spirits">Core Spirits</a>
+        <a href="#liqueurs">Liqueurs</a>
       </div>
       <div class="foot-col">
         <span>Distillery</span>
@@ -940,7 +935,7 @@
   </div>
   <div class="foot-bottom">
     <span>© 2026 Blackhat Distillery. Design concept prepared for internal review — not a live page.</span>
-    <span>PDP Concept — Duelers Collection</span>
+    <span>PDP Concept — All Spirits (22 Products)</span>
   </div>
 </footer>
 
@@ -953,16 +948,15 @@
 </div>
 
 <div class="concept-panel" id="conceptPanel">
-  <h5>About This Concept — Latest Round</h5>
+  <h5>About This Concept — All-Spirits Landing Page</h5>
   <ul>
-    <li><b>New this round — did a full layout pass against the Plytix PDP best-practices article:</b> added SEO essentials (meta description, Open Graph tags, canonical URL, and JSON-LD Product schema with price/rating markup), a checkout-trust row (secure checkout, age/ID verification, easy returns), a "We Accept" payment-methods row, a "Sold Through Retail Partners" availability box that now also covers in-person tasting-room purchase and how returns/exchanges work through the retailer, a full <b>Reviews &amp; Ratings tab</b> (4.8★ summary, star-distribution bars, Smoothness/Aroma/Value aspect ratings, sample reviews with verified-purchase badges and working helpful-vote buttons), a clickable star-rating line right under the product title that jumps straight to that tab, and a "You Might Also Like" cross-sell card linking to the Blackhat Whiskey page. Also tightened up two duplicate/generic image alt tags in the brand-story section for SEO.</li>
-    <li>Concept limitation to flag: the rating summary, review content, and JSON-LD schema are written for the default Double Oaked view — they don't yet swap per expression when you click Blanco/Dark/Midnight in the switcher above. Fine for this demo; a production build would pull separate rating data per product.</li>
-    <li>Reviews, rating counts, and helpful-vote numbers are placeholder sample data standing in for a real review platform (Yotpo, Judge.me, Okendo, etc.) — swap in real customer reviews before launch.</li>
-    <li>All 4 Duelers products use your real product spreadsheet and tasting notes document: correct product name, category, description, ABV/proof, SRP price, SKU, UPC, product photos, and real Nose/Palate/Finish/Key Flavor Notes.</li>
-    <li>Heads up: your product spreadsheet lists this item as "Duelers Dark Double Oak," but your tasting notes document says "Duelers Dark Double Oaked" — we went with "Double Oaked" per the explicit correction, but flagging the spreadsheet mismatch so it can be fixed at the source.</li>
-    <li>Still open — business/design decisions we're not guessing at: main-site color &amp; font specs from FourHawk, what to show in the Awards module for products with no awards yet, real Blue Weber agave icon art, size-variant/gift-set page-revision cost &amp; timeline, and final shipping/fulfillment copy now that orders route through retailers.</li>
-    <li>Still pending assets: the new logo file and any confirmed awards list.</li>
-    <li>This is 1 of 24 planned PDPs — the layout, tabs, and switcher are built to reuse across the full catalog.</li>
+    <li><b>New this round:</b> applied the same PDP-best-practices pass from the Duelers/Whiskey pages to the featured Duelers section here — a star-rating line linking to the full reviews tab, a checkout-trust row, and the "Sold Through Retail Partners" availability callout. Also added page-level SEO (meta description, Open Graph tags, and JSON-LD CollectionPage/ItemList schema) since this page represents the whole catalog rather than one product.</li>
+    <li>All 22 products from your spreadsheet are represented here, grouped by category: Duelers (featured/main line at top, interactive), Whiskey &amp; Bourbon (5), Core Spirits — Agave/Gin/Rum/Vodka (4), Royals + Rebels Rum (3), Liqueurs &amp; Specialty (5), and Private Label (Tanto Vodka).</li>
+    <li>Duelers is treated as the flagship line per your direction — its own featured band at the top with the same interactive bottle switcher, plus a link out to its full, dedicated PDP.</li>
+    <li>Blackhat Whiskey also links out to its own full PDP (built in the last round). The other 20 products show as catalog cards only — full individual PDPs haven't been built for those yet, so their "product page" links are marked as pending rather than going anywhere.</li>
+    <li>All 22 products now have real photos — Tanto Vodka, Blackhat Bourbon, Triple Sec, Galletoo, and Lebowski's Kool Coffee Liqueur were the last five and their links have since been fixed.</li>
+    <li>Card copy uses the short description and price straight from your product spreadsheet, plus the Category/Flavor Profile/Key Flavor Notes from your tasting notes document.</li>
+    <li>Still open, same as before: awards module behavior with no confirmed awards, FourHawk color/font specs, and content plans (Craft/Artist Spotlight) for non-Duelers lines.</li>
   </ul>
 </div>
 <div class="concept-badge" id="conceptBadge">
@@ -971,363 +965,97 @@
 </div>
 
 <script>
-  const MEDAL_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="#93691f" stroke-width="1.6"><circle cx="12" cy="9" r="6"/><path d="M8 14.5 6 21l6-3 6 3-2-6.5"/></svg>';
-  const LEAF_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="#7eaa8b" stroke-width="1.3"><ellipse cx="12" cy="20.5" rx="4.5" ry="1.4"/><path d="M12 20.5 C11 14 11 7 12 3 C13 7 13 14 12 20.5 Z"/><path d="M12 20.5 C13.2 15 15.5 9.5 18.5 5.5 C16.3 10.3 14.3 16 12 20.5 Z"/><path d="M12 20.5 C10.8 15 8.5 9.5 5.5 5.5 C7.7 10.3 9.7 16 12 20.5 Z"/><path d="M12 20.5 C13.8 16.2 17 12.5 20.5 10 C17.8 14 14.8 18 12 20.5 Z"/><path d="M12 20.5 C10.2 16.2 7 12.5 3.5 10 C6.2 14 9.2 18 12 20.5 Z"/></svg>';
-  const MEDAL_SVG_LG = '<svg class="medal" viewBox="0 0 24 24" fill="none" stroke="#93691f" stroke-width="1.3"><circle cx="12" cy="9" r="6.5"/><path d="M7.5 15 5.5 22l6.5-3.4 6.5 3.4-2-7"/></svg>';
-
-  const PRODUCTS = {
+  const DUELERS = {
     doubleoaked: {
-      name:'Dark Double Oaked',
-      category:'Double Oaked Agave Spirit',
+      name:'Dark Double Oaked', category:'Double Oaked Agave Spirit',
       badge:'Dark Double Oaked · 2× Silver',
       img:'https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp',
-      abv:'50%', proof:'100', oak:'French + American Oak',
-      price:'$125.00', sku:'BHTR-DDDO*', upc:'198715908244',
+      abv:'50%', proof:'100', price:'$125.00', sku:'BHTR-DDDO*', upc:'198715908244',
       flavorNotes:['Cinnamon','Dried Fruit','Espresso','Toasted Oak'],
-      desc:"<b>Deep, spiced, and structured.</b> Aromas of cinnamon, baking spice, and toasted wood give way to layered notes of dried fig and raisin with a hint of espresso. Rested a second time on French and American oak, and distilled from 100% Blue Weber agave, cut with pure Rocky Mountain water.",
-      lineupDesc:"Deep, spiced, and structured — cinnamon, toasted wood, dried fig, and a hint of espresso.",
-      awards:[{tier:'Silver', comp:'Craft Distillers Spirit Competition'},{tier:'Silver', comp:'San Diego Spirits Festival, 2025'}],
-      notes:[
-        {num:'01 — NOSE', title:'Cinnamon & Toasted Wood', text:'Expressive cinnamon and baking spice with toasted wood.'},
-        {num:'02 — PALATE', title:'Dried Fruit & Espresso', text:'Dried fruits — fig, raisin — layered with espresso notes.'},
-        {num:'03 — FINISH', title:'Medium & Lingering Spice', text:'Medium length, slightly dry, with lingering spice.'}
-      ],
-      craftNote:"For Dark Double Oaked, that spirit spends extra time resting on a second cask — French and American oak, often previously used to age whiskey — adding the depth and structure that give this expression its name.",
-      factOakTitle:'Double-Oak Finish', factOakDesc:'Rested a second time on French and American oak, often ex-whiskey barrels.',
-      serve:{
-        neatTitle:'Neat or Over Ice',
-        neatText:"Served neat in a rocks glass, Dark Double Oaked's caramel and light-oak character comes through most clearly. A single large-format ice cube slows dilution while opening the aroma.",
-        recipeTitle:'Suggested Serve: Double Oaked Old Fashioned',
-        recipeIntro:'A whiskey-style build that lets the double-oak character lead.',
-        recipeItems:['2 oz Duelers Dark Double Oaked','1 sugar cube or 1/4 oz simple syrup','2 dashes aromatic bitters','Orange peel, expressed and dropped in'],
-        noteTitle:'Best Enjoyed Slowly',
-        noteText:"Dark Double Oaked was built for sipping — the extended oak rest rewards a slower glass. Distillery staff recommend letting it breathe for a few minutes after pouring before the first sip."
-      }
+      desc:"<b>Deep, spiced, and structured.</b> Aromas of cinnamon, baking spice, and toasted wood give way to layered notes of dried fig and raisin with a hint of espresso."
     },
     blanco: {
-      name:'Blanco',
-      category:'Unaged Agave Spirit',
+      name:'Blanco', category:'Unaged Agave Spirit',
       badge:'Blanco · Core Expression',
       img:'https://i.ibb.co/j7XWzQV/Duelers-Blanco-H080326.webp',
-      abv:'40%', proof:'80', oak:'Unaged',
-      price:'$74.99', sku:'BHTR-DB', upc:'860002857459',
+      abv:'40%', proof:'80', price:'$74.99', sku:'BHTR-DB', upc:'860002857459',
       flavorNotes:['Earthy','Herbal','Citrus','Pepper','Minerality'],
-      desc:"<b>Opens clean and earthy</b>, with distinct mineral notes lifted by a touch of citrus zest. The finish is long and bright, with black pepper, faint agave sweetness, and a lively, tingly mouthfeel. Unaged and distilled from 100% Blue Weber agave, cut with pure Rocky Mountain water.",
-      lineupDesc:"Clean and earthy with distinct mineral notes, lifted by a touch of citrus zest.",
-      awards:[],
-      notes:[
-        {num:'01 — NOSE', title:'Clean & Earthy', text:'Clean and earthy with pronounced minerality.'},
-        {num:'02 — PALATE', title:'Vegetal & Citrus', text:'Subtle vegetal notes of green pepper and fresh herbs, supported by light citrus zest.'},
-        {num:'03 — FINISH', title:'Long & Clean', text:'Long and clean with black pepper, faint agave sweetness, and a gentle tingle.'}
-      ],
-      craftNote:"Blanco skips extended oak aging entirely, staying closest to the raw character of the agave itself — the clearest read on the Duelers base spirit.",
-      factOakTitle:'Unaged, By Design', factOakDesc:'Rested only briefly before bottling to preserve the agave’s natural character.',
-      serve:{
-        neatTitle:'Chilled or Over Ice',
-        neatText:"Served chilled or over ice, Blanco's clean agave character stays bright and unmasked — the expression to taste the base spirit at its purest.",
-        recipeTitle:'Suggested Serve: Blanco Paloma',
-        recipeIntro:'A bright, citrus-forward build that lets the agave lead.',
-        recipeItems:['2 oz Duelers Blanco','4 oz grapefruit soda','1/2 oz lime juice','Salt rim, optional'],
-        noteTitle:'The Purest Pour in the Line',
-        noteText:"Because Blanco skips oak aging entirely, it's best served simply — ice, citrus, and a little salt let the agave lead."
-      }
+      desc:"<b>Opens clean and earthy</b>, with distinct mineral notes lifted by a touch of citrus zest. The finish is long and bright, with black pepper, faint agave sweetness, and a lively, tingly mouthfeel."
     },
     dark: {
-      name:'Dark',
-      category:'Aged Agave Spirit',
+      name:'Dark', category:'Aged Agave Spirit',
       badge:'Dark · Bronze Medalist',
       img:'https://i.ibb.co/zWtKBRBC/Duelers-Dark-H080326.webp',
-      abv:'40%', proof:'80', oak:'American Oak',
-      price:'$89.99', sku:'BHTR-DD', upc:'860002857442',
+      abv:'40%', proof:'80', price:'$89.99', sku:'BHTR-DD', upc:'860002857442',
       flavorNotes:['Vanilla','Oak','Citrus','Pepper'],
-      desc:"<b>Delivers a balanced sweet and spice profile.</b> Bright vanilla and candied citrus peel lead into soft caramel, lightly toasted oak, and a touch of baking spice. Rested on American oak and distilled from 100% Blue Weber agave, cut with pure Rocky Mountain water.",
-      lineupDesc:"A balanced sweet and spice profile — bright vanilla, candied citrus, and soft caramel.",
-      awards:[{tier:'Bronze', comp:'San Diego Spirits Festival, 2025'}],
-      notes:[
-        {num:'01 — NOSE', title:'Vanilla & Citrus Peel', text:'Bright vanilla with candied citrus peel.'},
-        {num:'02 — PALATE', title:'Caramel & Baking Spice', text:'Soft caramel, light toasted oak, and gentle baking spice.'},
-        {num:'03 — FINISH', title:'Short & Dry', text:'Short and dry with black pepper and a clean exit.'}
-      ],
-      craftNote:"Dark rests on American oak just long enough to round out its bold, whiskey-forward profile without the extended finish of Dark Double Oaked.",
-      factOakTitle:'American Oak Rest', factOakDesc:'A single rest on American oak builds Dark’s fuller, whiskey-forward character.',
-      serve:{
-        neatTitle:'Neat or With a Splash of Water',
-        neatText:"Neat or with a single ice cube, Dark's fuller body and whiskey-forward profile hold up well against a splash of water to open the glass.",
-        recipeTitle:'Suggested Serve: Dark Whiskey Sour',
-        recipeIntro:'A classic sour build for whiskey drinkers exploring agave spirits.',
-        recipeItems:['2 oz Duelers Dark','3/4 oz lemon juice','1/2 oz simple syrup','Egg white or aquafaba, optional'],
-        noteTitle:'A Bridge for Whiskey Drinkers',
-        noteText:"Dark is built for people who reach for whiskey first — try it in place of bourbon in a favorite whiskey cocktail."
-      }
+      desc:"<b>Delivers a balanced sweet and spice profile.</b> Bright vanilla and candied citrus peel lead into soft caramel, lightly toasted oak, and a touch of baking spice."
     },
     midnight: {
-      name:'Midnight',
-      category:'Barrel-Proof Aged Agave Spirit',
+      name:'Midnight', category:'Barrel-Proof Aged Agave Spirit',
       badge:'Midnight · Gold Best in Class',
       img:'https://i.ibb.co/LzvxSCPx/Duelers-Midnight-H080326.webp',
-      abv:'55%', proof:'110', oak:'Extended Oak Rest',
-      price:'$150.00', sku:'BHTR-DM', upc:'198715909739',
+      abv:'55%', proof:'110', price:'$150.00', sku:'BHTR-DM', upc:'198715909739',
       flavorNotes:['Dark Chocolate','Caramel','Spice','Oak'],
-      desc:"<b>Bold, rich, and layered</b> — a whiskey-lover's expression. Deep caramel and toasted oak aromas lead into dark chocolate, warm baking spices, and a hint of orange peel, with a long, warming finish. Distilled from 100% Blue Weber agave and cut with pure Rocky Mountain water.",
-      lineupDesc:"Bold, rich, and layered — deep caramel, toasted oak, and dark chocolate.",
-      awards:[{tier:'Gold — Best in Class', comp:'Craft Distillers Spirit Competition'},{tier:'Bronze', comp:'San Diego Spirits Festival, 2025'}],
-      notes:[
-        {num:'01 — NOSE', title:'Caramel & Toasted Oak', text:'Deep caramel and toasted oak.'},
-        {num:'02 — PALATE', title:'Chocolate & Baking Spice', text:'Dark chocolate, warm baking spices (cinnamon, clove), and orange peel.'},
-        {num:'03 — FINISH', title:'Long & Warming', text:'Long and warming, with lingering black pepper and cocoa bitterness.'}
-      ],
-      craftNote:"Midnight spends the longest of any expression on oak, building the deep tobacco and caramel notes that define it — and the highest proof in the Duelers line.",
-      factOakTitle:'Extended Oak Rest', factOakDesc:'The longest time on oak in the line, built for the boldest, highest-proof expression.',
-      serve:{
-        neatTitle:'Neat, in a Snifter',
-        neatText:"Neat, in a snifter, to catch the full weight of Midnight's tobacco and caramel aromatics — the line's highest-proof, slowest sipper.",
-        recipeTitle:'Suggested Serve: Midnight Manhattan',
-        recipeIntro:'A bold, stirred build that matches Midnight’s high-proof intensity.',
-        recipeItems:['2 oz Duelers Midnight','1 oz sweet vermouth','2 dashes aromatic bitters','Brandied cherry, to garnish'],
-        noteTitle:'The Boldest Pour, Slowly',
-        noteText:"At 110 proof, Midnight rewards patience — let it breathe in the glass for a few minutes before the first sip."
-      }
+      desc:"<b>Bold, rich, and layered</b> — a whiskey-lover's expression. Deep caramel and toasted oak aromas lead into dark chocolate, warm baking spices, and a hint of orange peel."
     }
   };
 
-  const ORDER = ['doubleoaked','blanco','dark','midnight'];
-  let current = 'doubleoaked';
-
-  function renderAwardRow(container, awards, size){
-    if(!awards.length){
-      container.innerHTML = `<div class="award-pill">${LEAF_SVG}Core Expression<div class="tip"><b>Core Expression</b>Part of the original Duelers lineup, judged alongside the line's award-winning expressions.</div></div>`;
-      return;
-    }
-    container.innerHTML = awards.map(a => `
-      <div class="award-pill">${MEDAL_SVG}${a.tier} — ${a.comp}
-        <div class="tip"><b>${a.comp}</b>${a.tier} recognition, judged blind by industry professionals and spirits critics.</div>
-      </div>`).join('');
+  function renderFlavorNotes(container, notes){
+    container.innerHTML = (notes||[]).map(f => `<span class="flavorpill">${f}</span>`).join('');
   }
 
-  function renderAwardCards(container, awards){
-    if(!awards.length){
-      container.innerHTML = `<p class="noawards">This expression hasn't been entered into competition yet — Blanco is the line's foundational pour, and the base every other Duelers expression builds from.</p>`;
-      return;
-    }
-    container.innerHTML = awards.map(a => `
-      <div class="awardcard">${MEDAL_SVG_LG}<div><h4>${a.tier}</h4><span>${a.comp}</span></div></div>`).join('');
-  }
-
-  function renderNotes(container, notes){
-    container.innerHTML = notes.map(n => `
-      <div class="notecard">
-        <span class="num">${n.num}</span>
-        <h3>${n.title}</h3>
-        <p>${n.text}</p>
-      </div>`).join('');
-  }
-
-  function renderFlavorNotes(container, flavorNotes){
-    container.innerHTML = (flavorNotes||[]).map(f => `<span class="flavorpill">${f}</span>`).join('');
-  }
-
-  function renderServe(serve){
-    document.getElementById('serveNeatTitle').textContent = serve.neatTitle;
-    document.getElementById('serveNeatText').textContent = serve.neatText;
-    document.getElementById('serveRecipeTitle').textContent = serve.recipeTitle;
-    document.getElementById('serveRecipeIntro').textContent = serve.recipeIntro;
-    document.getElementById('serveRecipeList').innerHTML = serve.recipeItems.map(i => `<li>${i}</li>`).join('');
-    document.getElementById('serveNoteTitle').textContent = serve.noteTitle;
-    document.getElementById('serveNoteText').textContent = serve.noteText;
-  }
-
-  function renderLineup(){
-    const grid = document.getElementById('lineupGrid');
-    grid.innerHTML = ORDER.map(key => {
-      const p = PRODUCTS[key];
-      return `<div class="linecard ${key===current?'current':''}" data-key="${key}">
-        <div class="lc-bottle"><img src="${p.img}" alt="Duelers ${p.name}"></div>
-        <h3>Duelers ${p.name}</h3>
-        <div class="lc-spec">${p.abv} ABV · ${p.proof} Proof</div>
-        <p>${p.lineupDesc}</p>
-        <span class="lc-link">View Product →</span>
-      </div>`;
-    }).join('');
-    grid.querySelectorAll('.linecard').forEach(card=>{
-      card.addEventListener('click', ()=>{
-        switchProduct(card.dataset.key);
-        document.getElementById('top').scrollIntoView({behavior:'smooth'});
-      });
-    });
-  }
-
-  function switchProduct(key){
-    if(!PRODUCTS[key]) return;
-    current = key;
-    const p = PRODUCTS[key];
-
-    document.getElementById('crumbCurrent').textContent = p.name;
-    document.getElementById('prodName').textContent = p.name;
-    document.getElementById('prodCategory').textContent = p.category;
-    document.getElementById('galleryBadge').textContent = p.badge;
-    document.getElementById('heroImg').src = p.img;
-    document.getElementById('heroImg').alt = 'Duelers ' + p.name + ' bottle';
-    document.getElementById('prodDesc').innerHTML = p.desc;
-    document.getElementById('specAbv').textContent = p.abv;
-    document.getElementById('specProof').textContent = p.proof;
-    document.getElementById('specOak').textContent = p.oak;
-    document.getElementById('price').textContent = p.price;
-    document.getElementById('skuLine').textContent = 'SKU ' + p.sku + ' · UPC ' + p.upc;
-    document.getElementById('stickyImg').src = p.img;
-    document.getElementById('stickyName').textContent = 'Duelers ' + p.name;
-    document.getElementById('stickyPrice').textContent = p.price;
-    document.getElementById('craftNote').textContent = p.craftNote;
-    document.getElementById('factOakTitle').textContent = p.factOakTitle;
-    document.getElementById('factOakDesc').textContent = p.factOakDesc;
-
-    renderAwardRow(document.getElementById('awardRow'), p.awards);
-    renderAwardCards(document.getElementById('awardCards'), p.awards);
-    renderNotes(document.getElementById('noteCards'), p.notes);
-    renderFlavorNotes(document.getElementById('flavorNotes'), p.flavorNotes);
-    renderServe(p.serve);
-    renderLineup();
-
-    document.querySelectorAll('.thumb').forEach(t => t.classList.toggle('active', t.dataset.key === key));
-
-    const stage = document.getElementById('stage');
+  function switchDueler(key){
+    const p = DUELERS[key];
+    if(!p) return;
+    document.getElementById('duelName').textContent = p.name;
+    document.getElementById('duelCategory').textContent = p.category;
+    document.getElementById('duelBadge').textContent = p.badge;
+    document.getElementById('duelHeroImg').src = p.img;
+    document.getElementById('duelHeroImg').alt = 'Duelers ' + p.name + ' bottle';
+    document.getElementById('duelDesc').innerHTML = p.desc;
+    document.getElementById('duelAbv').textContent = p.abv;
+    document.getElementById('duelProof').textContent = p.proof;
+    document.getElementById('duelPrice').textContent = p.price;
+    document.getElementById('duelSku').textContent = 'SKU ' + p.sku + ' · UPC ' + p.upc;
+    renderFlavorNotes(document.getElementById('duelFlavor'), p.flavorNotes);
+    document.querySelectorAll('#duelThumbs .thumb').forEach(t => t.classList.toggle('active', t.dataset.key === key));
+    const stage = document.getElementById('duelStage');
     stage.style.opacity = 0.35;
     setTimeout(()=>{ stage.style.opacity = 1; }, 180);
   }
-
-  // Init
-  switchProduct('doubleoaked');
+  switchDueler('doubleoaked');
+  document.querySelectorAll('#duelThumbs .thumb').forEach(t=>{
+    t.addEventListener('click', ()=> switchDueler(t.dataset.key));
+  });
 
   // Reveal on scroll
   const revealEls = document.querySelectorAll('.reveal');
   const io = new IntersectionObserver((entries)=>{
     entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
-  },{ threshold:0.12 });
+  },{ threshold:0.1 });
   revealEls.forEach(el=>io.observe(el));
 
-  // Bottle tilt on mouse move
-  const stage = document.getElementById('stage');
-  const scene = document.getElementById('bottleScene');
-  stage.addEventListener('mousemove', (e)=>{
-    const r = stage.getBoundingClientRect();
+  // Bottle tilt on mouse move (Duelers hero only)
+  const duelStage = document.getElementById('duelStage');
+  const duelScene = document.getElementById('duelScene');
+  duelStage.addEventListener('mousemove', (e)=>{
+    const r = duelStage.getBoundingClientRect();
     const x = (e.clientX - r.left)/r.width - 0.5;
     const y = (e.clientY - r.top)/r.height - 0.5;
-    scene.style.transform = `rotateY(${x*14}deg) rotateX(${-y*10}deg) translateZ(10px)`;
+    duelScene.style.transform = `rotateY(${x*14}deg) rotateX(${-y*10}deg) translateZ(10px)`;
   });
-  stage.addEventListener('mouseleave', ()=>{ scene.style.transform = 'rotateY(0) rotateX(0)'; });
+  duelStage.addEventListener('mouseleave', ()=>{ duelScene.style.transform = 'rotateY(0) rotateX(0)'; });
 
   // Lightbox on stage click
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
-  stage.addEventListener('click', ()=>{
-    lightboxImg.src = document.getElementById('heroImg').src;
+  duelStage.addEventListener('click', ()=>{
+    lightboxImg.src = document.getElementById('duelHeroImg').src;
     lightbox.classList.add('show');
   });
   document.getElementById('lightboxClose').addEventListener('click', ()=> lightbox.classList.remove('show'));
   lightbox.addEventListener('click', (e)=>{ if(e.target === lightbox) lightbox.classList.remove('show'); });
   document.addEventListener('keydown', (e)=>{ if(e.key === 'Escape') lightbox.classList.remove('show'); });
-
-  // Thumbnail switching
-  document.querySelectorAll('.thumb').forEach(t=>{
-    t.addEventListener('click', ()=> switchProduct(t.dataset.key));
-  });
-
-  // Quantity steppers (main + sticky, kept in sync)
-  function wireQty(inputId, minusId, plusId, mirrorId){
-    const input = document.getElementById(inputId);
-    const minus = document.getElementById(minusId);
-    const plus = document.getElementById(plusId);
-    const mirror = mirrorId ? document.getElementById(mirrorId) : null;
-    function set(v){
-      v = Math.max(1, Math.min(24, v));
-      input.value = v;
-      if(mirror) mirror.value = v;
-    }
-    minus.addEventListener('click', ()=> set(parseInt(input.value||1)-1));
-    plus.addEventListener('click', ()=> set(parseInt(input.value||1)+1));
-    input.addEventListener('change', ()=> set(parseInt(input.value||1)));
-    return set;
-  }
-  wireQty('qtyInput','qtyMinus','qtyPlus','qtyInput2');
-  wireQty('qtyInput2','qtyMinus2','qtyPlus2','qtyInput');
-
-  // Add to cart (both buttons)
-  const cartCount = document.getElementById('cartCount');
-  let count = 0;
-  function addToCart(btn, label){
-    const qty = parseInt(document.getElementById('qtyInput').value || 1);
-    count += qty;
-    cartCount.textContent = count;
-    cartCount.classList.remove('bump'); void cartCount.offsetWidth; cartCount.classList.add('bump');
-    const original = label.textContent;
-    btn.classList.add('added');
-    label.textContent = 'Added ✓';
-    setTimeout(()=>{ btn.classList.remove('added'); label.textContent = original; }, 1600);
-  }
-  document.getElementById('addCart').addEventListener('click', function(){ addToCart(this, document.getElementById('addCartLabel')); });
-  document.getElementById('addCart2').addEventListener('click', function(){ addToCart(this, document.getElementById('addCartLabel2')); });
-
-  // Sticky bar visibility
-  const stickyBar = document.getElementById('stickyBar');
-  const buyboxEl = document.querySelector('.buybox');
-  const stickyObserver = new IntersectionObserver((entries)=>{
-    entries.forEach(entry=>{
-      if(!entry.isIntersecting && entry.boundingClientRect.top < 0){ stickyBar.classList.add('show'); }
-      else { stickyBar.classList.remove('show'); }
-    });
-  }, { threshold: 0 });
-  stickyObserver.observe(buyboxEl);
-
-  // Tabs
-  const tabBtns = document.querySelectorAll('.tabbtn');
-  function activateTab(tabKey){
-    tabBtns.forEach(b=>b.classList.remove('active'));
-    document.querySelectorAll('.tabpanel').forEach(p=>p.classList.remove('active'));
-    const btn = document.querySelector('.tabbtn[data-tab="'+tabKey+'"]');
-    if(btn) btn.classList.add('active');
-    const panel = document.getElementById('panel-'+tabKey);
-    if(panel) panel.classList.add('active');
-  }
-  tabBtns.forEach(btn=>{
-    btn.addEventListener('click', ()=> activateTab(btn.dataset.tab));
-  });
-
-  // Quick-rating link: jump straight to the Reviews tab
-  const jumpToReviews = document.getElementById('jumpToReviews');
-  if(jumpToReviews){
-    jumpToReviews.addEventListener('click', (e)=>{
-      e.preventDefault();
-      activateTab('reviews');
-      document.querySelector('.tabsection').scrollIntoView({behavior:'smooth', block:'start'});
-    });
-  }
-
-  // Reviews: helpful-vote toggle + write-a-review placeholder
-  document.querySelectorAll('.helpfulbtn').forEach(btn=>{
-    btn.addEventListener('click', ()=>{
-      if(btn.classList.contains('voted')) return;
-      const match = btn.textContent.match(/\((\d+)\)/);
-      const n = match ? parseInt(match[1],10)+1 : 1;
-      btn.innerHTML = btn.querySelector('svg').outerHTML + 'Helpful ('+n+')';
-      btn.classList.add('voted');
-    });
-  });
-  const writeReviewLink = document.getElementById('writeReviewLink');
-  if(writeReviewLink){
-    writeReviewLink.addEventListener('click', (e)=>{
-      e.preventDefault();
-      writeReviewLink.textContent = 'Review form goes here at launch →';
-    });
-  }
-
-  // Accordion
-  document.querySelectorAll('.acc-head').forEach(head=>{
-    head.addEventListener('click', ()=>{
-      const item = head.parentElement;
-      const wasOpen = item.classList.contains('open');
-      item.parentElement.querySelectorAll('.acc-item').forEach(i=>i.classList.remove('open'));
-      if(!wasOpen) item.classList.add('open');
-    });
-  });
 
   // Concept badge toggle
   const conceptBadge = document.getElementById('conceptBadge');
