@@ -167,6 +167,10 @@
     overflow:hidden; transition:border-color .2s, transform .2s;
   }
   .thumb img{ max-width:62%; max-height:62%; object-fit:contain; filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)); }
+  /* Tone/pop match: Dark & Midnight darkened slightly to match Double Oaked & Blanco; Double Oaked & Midnight get a contrast/saturation lift so label stars pop like they do on Blanco & Dark */
+  .thumb[data-key="doubleoaked"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) saturate(1.12) contrast(1.08); }
+  .thumb[data-key="dark"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) brightness(0.93); }
+  .thumb[data-key="midnight"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) brightness(0.9) saturate(1.1) contrast(1.08); }
   .thumb.active{ border-color:var(--brass); box-shadow:0 0 0 1px var(--brass); }
   .thumb:hover{ transform:translateY(-3px); }
   .thumb .cap{
@@ -410,6 +414,9 @@
   .linecard:hover{ transform:translateY(-6px); border-color:var(--brass); }
   .linecard .lc-bottle{ height:150px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
   .linecard .lc-bottle img{ max-height:100%; max-width:80%; object-fit:contain; filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)); }
+  .linecard[data-key="doubleoaked"] .lc-bottle img{ filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)) saturate(1.12) contrast(1.08); }
+  .linecard[data-key="dark"] .lc-bottle img{ filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)) brightness(0.93); }
+  .linecard[data-key="midnight"] .lc-bottle img{ filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)) brightness(0.9) saturate(1.1) contrast(1.08); }
   .linecard h3{ font-size:18px; margin-bottom:6px; }
   .linecard .lc-spec{ font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--brass-dark); margin-bottom:10px; font-weight:700; }
   .linecard p{ font-size:12.5px; color:var(--ink-soft); line-height:1.6; margin-bottom:16px; min-height:48px; }
@@ -497,7 +504,7 @@
 <header>
   <div class="headrow">
     <a class="logo" href="#top">
-      <img class="logo-full" src="https://i.ibb.co/KknVGFH/path155.png" alt="Blackhat Distillery logo">
+      <img class="logo-full" src="https://i.ibb.co/xcNRBxQ/Blackhat-Logo-Full-Inverted.png" alt="Blackhat Distillery logo">
       <div class="logo-locality">Colorado Springs</div>
     </a>
     <nav class="mainnav">
@@ -909,7 +916,7 @@
 <footer>
   <div class="foot-in">
     <div class="foot-left">
-      <img class="foot-logo-full" src="https://i.ibb.co/KknVGFH/path155.png" alt="Blackhat Distillery logo">
+      <img class="foot-logo-full" src="https://i.ibb.co/xcNRBxQ/Blackhat-Logo-Full-Inverted.png" alt="Blackhat Distillery logo">
       <div>
         <p>3104 N Nevada Ave Ste 120, Colorado Springs, CO 80907. Please enjoy responsibly — must be 21+ to purchase.</p>
       </div>
@@ -1147,10 +1154,20 @@
     });
   }
 
+  // Tone/pop match: Dark & Midnight darkened slightly to match Double Oaked & Blanco;
+  // Double Oaked & Midnight get a contrast/saturation lift so the label stars pop like they do on Blanco & Dark.
+  const TONE_FILTER = {
+    doubleoaked: 'saturate(1.12) contrast(1.08)',
+    blanco: '',
+    dark: 'brightness(0.93)',
+    midnight: 'brightness(0.9) saturate(1.1) contrast(1.08)'
+  };
+
   function switchProduct(key){
     if(!PRODUCTS[key]) return;
     current = key;
     const p = PRODUCTS[key];
+    const tone = TONE_FILTER[key] || '';
 
     document.getElementById('crumbCurrent').textContent = p.name;
     document.getElementById('prodName').textContent = p.name;
@@ -1158,6 +1175,7 @@
     document.getElementById('galleryBadge').textContent = p.badge;
     document.getElementById('heroImg').src = p.img;
     document.getElementById('heroImg').alt = 'Duelers ' + p.name + ' bottle';
+    document.getElementById('heroImg').style.filter = 'drop-shadow(0 22px 26px rgba(33,24,24,0.28)) ' + tone;
     document.getElementById('prodDesc').innerHTML = p.desc;
     document.getElementById('specAbv').textContent = p.abv;
     document.getElementById('specProof').textContent = p.proof;
@@ -1165,6 +1183,7 @@
     document.getElementById('price').textContent = p.price;
     document.getElementById('skuLine').textContent = 'SKU ' + p.sku + ' · UPC ' + p.upc;
     document.getElementById('stickyImg').src = p.img;
+    document.getElementById('stickyImg').style.filter = tone;
     document.getElementById('stickyName').textContent = 'Duelers ' + p.name;
     document.getElementById('stickyPrice').textContent = p.price;
     document.getElementById('craftNote').textContent = p.craftNote;
@@ -1210,7 +1229,9 @@
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightboxImg');
   stage.addEventListener('click', ()=>{
-    lightboxImg.src = document.getElementById('heroImg').src;
+    const hero = document.getElementById('heroImg');
+    lightboxImg.src = hero.src;
+    lightboxImg.style.filter = TONE_FILTER[current] || '';
     lightbox.classList.add('show');
   });
   document.getElementById('lightboxClose').addEventListener('click', ()=> lightbox.classList.remove('show'));
