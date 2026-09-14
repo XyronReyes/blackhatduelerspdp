@@ -170,10 +170,8 @@
     overflow:hidden; transition:border-color .2s, transform .2s;
   }
   .thumb img{ max-width:62%; max-height:62%; object-fit:contain; filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)); }
-  /* Tone/pop match: Dark & Midnight darkened slightly to match Double Oaked & Blanco; Double Oaked & Midnight get a contrast/saturation lift so label stars pop like they do on Blanco & Dark */
+  /* Double Oaked gets a contrast/saturation lift so its label stars pop like they do on Blanco & Dark. Dark & Midnight now use the edited source photos as-is — no compensating filter (removed for render performance and since the new photos are already color-corrected). */
   .thumb[data-key="doubleoaked"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) saturate(1.12) contrast(1.08); }
-  .thumb[data-key="dark"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) brightness(0.93); }
-  .thumb[data-key="midnight"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) brightness(0.9) saturate(1.1) contrast(1.08); }
   .thumb.active{ border-color:var(--brass); box-shadow:0 0 0 1px var(--brass); }
   .thumb:hover{ transform:translateY(-3px); }
   .thumb .cap{
@@ -418,8 +416,6 @@
   .linecard .lc-bottle{ height:150px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
   .linecard .lc-bottle img{ max-height:100%; max-width:80%; object-fit:contain; filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)); }
   .linecard[data-key="doubleoaked"] .lc-bottle img{ filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)) saturate(1.12) contrast(1.08); }
-  .linecard[data-key="dark"] .lc-bottle img{ filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)) brightness(0.93); }
-  .linecard[data-key="midnight"] .lc-bottle img{ filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)) brightness(0.9) saturate(1.1) contrast(1.08); }
   .linecard h3{ font-size:18px; margin-bottom:6px; }
   .linecard .lc-spec{ font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--brass-dark); margin-bottom:10px; font-weight:700; }
   .linecard p{ font-size:12.5px; color:var(--ink-soft); line-height:1.6; margin-bottom:16px; min-height:48px; }
@@ -558,11 +554,11 @@
         <span class="cap">Blanco</span>
       </div>
       <div class="thumb" data-key="dark">
-        <img src="https://i.ibb.co/VcWwK4M2/Duelers-Dark-H080326.webp" alt="Dark" loading="lazy" decoding="async">
+        <img src="https://i.ibb.co/ymMCJ5P4/Duelers-Dark-H080326-Edited-copy.webp" alt="Dark" loading="lazy" decoding="async">
         <span class="cap">Dark</span>
       </div>
       <div class="thumb" data-key="midnight">
-        <img src="https://i.ibb.co/PG2bccz9/Duelers-Midnight-H080326.webp" alt="Midnight" loading="lazy" decoding="async">
+        <img src="https://i.ibb.co/Q3tv0SkB/Duelers-Midnight-H080326-edited-copy.webp" alt="Midnight" loading="lazy" decoding="async">
         <span class="cap">Midnight</span>
       </div>
     </div>
@@ -1037,7 +1033,7 @@
       name:'Dark',
       category:'Aged Agave Spirit',
       badge:'Dark · Bronze Medalist',
-      img:'https://i.ibb.co/VcWwK4M2/Duelers-Dark-H080326.webp',
+      img:'https://i.ibb.co/ymMCJ5P4/Duelers-Dark-H080326-Edited-copy.webp',
       abv:'40%', proof:'80', oak:'American Oak',
       price:'$89.99', sku:'BHTR-DD', upc:'860002857442',
       flavorNotes:['Vanilla','Oak','Citrus','Pepper'],
@@ -1065,7 +1061,7 @@
       name:'Midnight',
       category:'Barrel-Proof Aged Agave Spirit',
       badge:'Midnight · Gold Best in Class',
-      img:'https://i.ibb.co/PG2bccz9/Duelers-Midnight-H080326.webp',
+      img:'https://i.ibb.co/Q3tv0SkB/Duelers-Midnight-H080326-edited-copy.webp',
       abv:'55%', proof:'110', oak:'Extended Oak Rest',
       price:'$150.00', sku:'BHTR-DM', upc:'198715909739',
       flavorNotes:['Dark Chocolate','Caramel','Spice','Oak'],
@@ -1162,8 +1158,8 @@
   const TONE_FILTER = {
     doubleoaked: 'saturate(1.12) contrast(1.08)',
     blanco: '',
-    dark: 'brightness(0.93)',
-    midnight: 'brightness(0.9) saturate(1.1) contrast(1.08)'
+    dark: '',
+    midnight: ''
   };
 
   function switchProduct(key){
