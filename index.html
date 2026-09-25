@@ -10,7 +10,7 @@
 <meta property="og:type" content="product">
 <meta property="og:title" content="Duelers Dark Double Oaked — Blackhat Distillery">
 <meta property="og:description" content="A 2× Silver-winning American Agave Spirit, double-oaked for deep, spiced structure. Distilled from 100% Blue Weber agave in Colorado Springs.">
-<meta property="og:image" content="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp">
+<meta property="og:image" content="https://i.ibb.co/gZ2ndxJ7/Duelers-Dark-Double-Oaked-Hero-TP.webp">
 <meta property="product:price:amount" content="125.00">
 <meta property="product:price:currency" content="USD">
 <script type="application/ld+json">
@@ -18,7 +18,7 @@
   "@context": "https://schema.org/",
   "@type": "Product",
   "name": "Duelers Dark Double Oaked",
-  "image": "https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp",
+  "image": "https://i.ibb.co/gZ2ndxJ7/Duelers-Dark-Double-Oaked-Hero-TP.webp",
   "description": "Deep, spiced, and structured. Aromas of cinnamon, baking spice, and toasted wood give way to layered notes of dried fig and raisin with a hint of espresso. Rested a second time on French oak, and distilled from 100% Blue Weber agave, cut with pure Rocky Mountain water.",
   "sku": "BHTR-DDDO*",
   "gtin12": "198715908244",
@@ -44,7 +44,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preconnect" href="https://i.ibb.co">
 <link rel="dns-prefetch" href="https://i.ibb.co">
-<link rel="preload" as="image" href="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" fetchpriority="high" referrerpolicy="no-referrer">
+<link rel="preload" as="image" href="https://i.ibb.co/gZ2ndxJ7/Duelers-Dark-Double-Oaked-Hero-TP.webp" fetchpriority="high" referrerpolicy="no-referrer">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&family=Nunito+Sans:ital,opsz,wght@0,6..12,300;0,6..12,400;0,6..12,500;0,6..12,600;0,6..12,700;0,6..12,800;0,6..12,900&display=swap" rel="stylesheet">
 <style>
   :root{
@@ -165,21 +165,20 @@
   .thumbs-label span.hint{ font-size:11px; color:var(--ink-soft); }
   .thumbs{ display:flex; gap:12px; }
   .thumb{
-    flex:1; aspect-ratio:1; border-radius:12px; border:1px solid var(--line);
+    flex:1; border-radius:12px; border:1px solid var(--line);
     background:var(--paper);
-    display:flex; align-items:center; justify-content:center; position:relative;
+    display:flex; flex-direction:column; align-items:stretch;
     overflow:hidden; transition:border-color .2s, transform .2s;
   }
+  .thumb-stage{ aspect-ratio:1; display:flex; align-items:center; justify-content:center; position:relative; }
   .thumb img{ max-width:62%; max-height:62%; object-fit:contain; filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)); }
   /* Double Oaked gets a contrast/saturation lift so its label stars pop like they do on Blanco & Dark. Dark & Midnight now use the edited source photos as-is — no compensating filter (removed for render performance and since the new photos are already color-corrected). */
   .thumb[data-key="doubleoaked"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) saturate(1.12) contrast(1.08); }
   .thumb.active{ border-color:var(--brass); box-shadow:0 0 0 1px var(--brass); }
   .thumb:hover{ transform:translateY(-3px); }
   .thumb .cap{
-    position:absolute; bottom:0; left:0; right:0; font-size:9.5px; text-align:center;
-    letter-spacing:.06em; text-transform:uppercase; color:var(--ink); padding:4px 0 5px;
-    background:linear-gradient(0deg, rgba(255,255,255,.95), transparent);
-    font-weight:700;
+    font-size:9.5px; text-align:center; letter-spacing:.06em; text-transform:uppercase;
+    color:var(--ink); padding:5px 6px 8px; font-weight:700; line-height:1.3;
   }
 
   /* buy box */
@@ -533,7 +532,7 @@
       <div class="ground-shadow"></div>
       <span class="badge-corner" id="galleryBadge">Double Oaked · 2× Silver</span>
       <div class="bottle-scene" id="bottleScene">
-        <img id="heroImg" src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="Duelers Dark Double Oaked bottle" fetchpriority="high" decoding="async">
+        <img id="heroImg" src="https://i.ibb.co/gZ2ndxJ7/Duelers-Dark-Double-Oaked-Hero-TP.webp" alt="Duelers Dark Double Oaked bottle" fetchpriority="high" decoding="async">
       </div>
       <span class="zoom-hint">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
@@ -547,19 +546,19 @@
     </div>
     <div class="thumbs" id="thumbs">
       <div class="thumb active" data-key="doubleoaked">
-        <img src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="Dark Double Oaked" loading="lazy" decoding="async">
+        <div class="thumb-stage"><img src="https://i.ibb.co/gZ2ndxJ7/Duelers-Dark-Double-Oaked-Hero-TP.webp" alt="Dark Double Oaked" loading="lazy" decoding="async"></div>
         <span class="cap">Double Oaked</span>
       </div>
       <div class="thumb" data-key="blanco">
-        <img src="https://i.ibb.co/j7XWzQV/Duelers-Blanco-H080326.webp" alt="Blanco" loading="lazy" decoding="async">
+        <div class="thumb-stage"><img src="https://i.ibb.co/0pRN4msX/Dueler-Blanco-Hero-TP.webp" alt="Blanco" loading="lazy" decoding="async"></div>
         <span class="cap">Blanco</span>
       </div>
       <div class="thumb" data-key="dark">
-        <img src="https://i.ibb.co/ymMCJ5P4/Duelers-Dark-H080326-Edited-copy.webp" alt="Dark" loading="lazy" decoding="async">
+        <div class="thumb-stage"><img src="https://i.ibb.co/ymMCJ5P4/Duelers-Dark-H080326-Edited-copy.webp" alt="Dark" loading="lazy" decoding="async"></div>
         <span class="cap">Dark</span>
       </div>
       <div class="thumb" data-key="midnight">
-        <img src="https://i.ibb.co/Q3tv0SkB/Duelers-Midnight-H080326-edited-copy.webp" alt="Midnight" loading="lazy" decoding="async">
+        <div class="thumb-stage"><img src="https://i.ibb.co/8nctzz8T/Duelers-Midnight-Hero-TP.webp" alt="Midnight" loading="lazy" decoding="async"></div>
         <span class="cap">Midnight</span>
       </div>
     </div>
@@ -637,9 +636,9 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="10" width="13" height="9" rx="1"/><path d="M16 13h3l2 3v3h-5z"/><circle cx="7.5" cy="20.5" r="1.5"/><circle cx="17.5" cy="20.5" r="1.5"/></svg>
       <div>
         <div class="at-title">Sold Through Retail Partners</div>
-        <div class="at-sub">Blackhat spirits aren't shipped direct — find this expression at a liquor store near you or ask your local retailer to order it in. Each batch is small and limited, so availability shifts release to release.</div>
-        <div class="at-sub">Prefer to buy in person? Bottles are also available by the pour or to take home at our Colorado Springs tasting room.</div>
-        <div class="at-sub">Returns &amp; exchanges follow the policy of the retailer where you purchased — we're not able to process returns directly since we don't sell or ship bottles ourselves.</div>
+        <div class="at-sub">Online orders are sold and shipped by one of our licensed retail partners, only where state law allows. Your order confirmation will show which retailer is handling it. Adult signature with valid ID (21+) required at delivery.</div>
+        <div class="at-sub">Also available at select retailers and our Colorado Springs tasting room (21+ with ID). Batches are limited, so availability varies.</div>
+        <div class="at-sub"><b>Returns:</b> Blackhat Distillery doesn't sell or ship bottles directly. Returns and refunds are handled by the retailer that fulfilled your order, under their policies. Must be 21+. Please enjoy responsibly.</div>
       </div>
     </div>
 
@@ -668,7 +667,7 @@
 <!-- STICKY BAR -->
 <div class="stickybar" id="stickyBar">
   <div class="stickybar-in">
-    <img class="mini-bottle" id="stickyImg" src="https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp" alt="" loading="lazy" decoding="async">
+    <img class="mini-bottle" id="stickyImg" src="https://i.ibb.co/gZ2ndxJ7/Duelers-Dark-Double-Oaked-Hero-TP.webp" alt="" loading="lazy" decoding="async">
     <div class="info">
       <div class="name" id="stickyName">Duelers Double Oaked</div>
       <div class="sub">750ml</div>
@@ -903,7 +902,7 @@
     <h2>From the Same Distillery</h2>
   </div>
   <a class="alsocard" href="blackhat-whiskey-pdp-concept.html">
-    <div class="ac-img"><img src="https://i.ibb.co/9m1HKqnb/Whiskey-H080326.webp" alt="Blackhat Whiskey bottle" loading="lazy" decoding="async"></div>
+    <div class="ac-img"><img src="https://i.ibb.co/Dgb4p3GK/BH-Whiskey-Hero-TP.webp" alt="Blackhat Whiskey bottle" loading="lazy" decoding="async"></div>
     <div class="ac-body">
       <div class="ac-cat">Straight Bourbon Whiskey</div>
       <h3>Blackhat Whiskey</h3>
@@ -978,7 +977,7 @@
       name:'Dark Double Oaked',
       category:'Double Oaked Agave Spirit',
       badge:'Dark Double Oaked · 2× Silver',
-      img:'https://i.ibb.co/Kxq4brvP/Dueler-Dark-Double-Oaked-H080326.webp',
+      img:'https://i.ibb.co/gZ2ndxJ7/Duelers-Dark-Double-Oaked-Hero-TP.webp',
       abv:'50%', proof:'100', oak:'French Oak',
       price:'$125.00', sku:'BHTR-DDDO*', upc:'198715908244',
       flavorNotes:['Cinnamon','Dried Fruit','Espresso','Toasted Oak'],
@@ -1006,7 +1005,7 @@
       name:'Blanco',
       category:'Unaged Agave Spirit',
       badge:'Blanco · Core Expression',
-      img:'https://i.ibb.co/j7XWzQV/Duelers-Blanco-H080326.webp',
+      img:'https://i.ibb.co/0pRN4msX/Dueler-Blanco-Hero-TP.webp',
       abv:'40%', proof:'80', oak:'Unaged',
       price:'$74.99', sku:'BHTR-DB', upc:'860002857459',
       flavorNotes:['Earthy','Herbal','Citrus','Pepper','Minerality'],
@@ -1062,7 +1061,7 @@
       name:'Midnight',
       category:'Barrel-Proof Aged Agave Spirit',
       badge:'Midnight · Gold Best in Class',
-      img:'https://i.ibb.co/Q3tv0SkB/Duelers-Midnight-H080326-edited-copy.webp',
+      img:'https://i.ibb.co/8nctzz8T/Duelers-Midnight-Hero-TP.webp',
       abv:'55%', proof:'110', oak:'Extended Oak Rest',
       price:'$150.00', sku:'BHTR-DM', upc:'198715909739',
       flavorNotes:['Dark Chocolate','Caramel','Spice','Oak'],
