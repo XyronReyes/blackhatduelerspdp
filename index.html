@@ -135,7 +135,7 @@
   .pdp{ display:grid; grid-template-columns:1.05fr 0.95fr; gap:70px; padding:36px 32px 90px; max-width:1240px; margin:0 auto; }
 
   .gallery-stage{
-    position:relative; aspect-ratio:4/5; border-radius:20px; overflow:hidden;
+    position:relative; aspect-ratio:4/5; min-height:340px; border-radius:20px; overflow:hidden;
     background:var(--paper);
     border:1px solid var(--line);
     display:flex; align-items:center; justify-content:center;
@@ -157,8 +157,8 @@
     color:var(--ink-soft); display:flex; gap:6px; align-items:center; opacity:0; transition:opacity .3s;
   }
   .gallery-stage:hover .zoom-hint{ opacity:1; }
-  .bottle-scene{ position:relative; width:56%; height:80%; transition:transform .15s ease-out; will-change:transform; display:flex; align-items:center; justify-content:center; z-index:2;}
-  .bottle-scene img{ max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 22px 26px rgba(33,24,24,0.28)); transition:opacity .2s; }
+  .bottle-scene{ position:relative; width:56%; height:80%; margin:0 auto; transition:transform .15s ease-out; will-change:transform; display:flex; align-items:center; justify-content:center; z-index:2;}
+  .bottle-scene img{ display:block; max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; filter:drop-shadow(0 22px 26px rgba(33,24,24,0.28)); transition:opacity .2s; }
 
   .thumbs-label{ display:flex; justify-content:space-between; align-items:baseline; margin-top:22px; margin-bottom:12px; }
   .thumbs-label .eyebrow{ font-size:11.5px; }
@@ -170,8 +170,8 @@
     display:flex; flex-direction:column; align-items:stretch;
     overflow:hidden; transition:border-color .2s, transform .2s;
   }
-  .thumb-stage{ aspect-ratio:1; display:flex; align-items:center; justify-content:center; position:relative; }
-  .thumb img{ max-width:62%; max-height:62%; object-fit:contain; filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)); }
+  .thumb-stage{ aspect-ratio:1; min-height:72px; width:100%; display:flex; align-items:center; justify-content:center; position:relative; }
+  .thumb img{ display:block; max-width:62%; max-height:62%; width:auto; height:auto; object-fit:contain; filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)); margin:0 auto; }
   /* Double Oaked gets a contrast/saturation lift so its label stars pop like they do on Blanco & Dark. Dark & Midnight now use the edited source photos as-is — no compensating filter (removed for render performance and since the new photos are already color-corrected). */
   .thumb[data-key="doubleoaked"] img{ filter:drop-shadow(0 6px 8px rgba(33,24,24,0.22)) saturate(1.12) contrast(1.08); }
   .thumb.active{ border-color:var(--brass); box-shadow:0 0 0 1px var(--brass); }
@@ -403,7 +403,7 @@
   .alsocard{ display:flex; align-items:center; gap:28px; background:var(--paper-2); border:1px solid var(--line); border-radius:18px; padding:24px 28px; transition:border-color .25s, transform .25s; }
   .alsocard:hover{ border-color:var(--brass); transform:translateY(-3px); }
   .alsocard .ac-img{ width:88px; height:130px; flex:none; display:flex; align-items:center; justify-content:center; }
-  .alsocard .ac-img img{ max-width:100%; max-height:100%; object-fit:contain; filter:drop-shadow(0 10px 14px rgba(33,24,24,0.22)); }
+  .alsocard .ac-img img{ display:block; max-width:100%; max-height:100%; width:auto; height:auto; object-fit:contain; margin:0 auto; filter:drop-shadow(0 10px 14px rgba(33,24,24,0.22)); }
   .alsocard .ac-body{ flex:1; }
   .alsocard .ac-cat{ font-size:10px; letter-spacing:.1em; text-transform:uppercase; color:var(--ox); font-weight:800; margin-bottom:6px; }
   .alsocard h3{ font-size:19px; margin-bottom:6px; }
@@ -413,8 +413,8 @@
   .lineup-grid{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
   .linecard{ background:var(--paper-2); border:1px solid var(--line); border-radius:18px; padding:26px; transition:transform .3s, border-color .3s; position:relative; overflow:hidden; cursor:pointer; }
   .linecard:hover{ transform:translateY(-6px); border-color:var(--brass); }
-  .linecard .lc-bottle{ height:150px; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
-  .linecard .lc-bottle img{ max-height:100%; max-width:80%; object-fit:contain; filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)); }
+  .linecard .lc-bottle{ height:150px; width:100%; display:flex; align-items:center; justify-content:center; margin-bottom:18px; }
+  .linecard .lc-bottle img{ display:block; max-height:100%; max-width:80%; width:auto; height:auto; object-fit:contain; margin:0 auto; filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)); }
   .linecard[data-key="doubleoaked"] .lc-bottle img{ filter:drop-shadow(0 14px 16px rgba(33,24,24,0.25)) saturate(1.12) contrast(1.08); }
   .linecard h3{ font-size:18px; margin-bottom:6px; }
   .linecard .lc-spec{ font-size:11px; letter-spacing:.06em; text-transform:uppercase; color:var(--brass-dark); margin-bottom:10px; font-weight:700; }
@@ -864,10 +864,10 @@
 <section class="story reveal">
   <div class="story-in">
     <div>
-      <span class="eyebrow on-dark">Every Label, Hand-Painted</span>
+      <span class="eyebrow on-dark">Original Artwork on Every Label</span>
       <h2>An Original by Phil Lear</h2>
-      <p>Each bottle in the Duelers line carries original painted artwork by Colorado Springs artist Phil Lear, whose expressive realism and cinematic use of light give the line its distinctive, gallery-worthy presence on the shelf.</p>
-      <p>It's a detail that turns every Duelers bottle into something worth displaying long after it's empty — consistent with a line built to feel deliberate in every part of the experience, right down to the label. From the barrels to the tasting room, the same craftsmanship shows up throughout the Blackhat distillery in Colorado Springs.</p>
+      <p>Each Duelers label features original artwork by Colorado Springs artist Phil Lear, whose expressive realism and cinematic use of light give the line its distinctive, gallery-worthy presence on the shelf.</p>
+      <p>It's a detail that turns every Duelers bottle into something worth displaying long after it's empty, consistent with a line built to feel deliberate in every part of the experience, right down to the label. From the barrels to the tasting room, the same craftsmanship shows up throughout the Blackhat distillery in Colorado Springs.</p>
       <div class="sig">— Blackhat Distillery, on the Duelers bottle art</div>
     </div>
     <div class="story-photos">
